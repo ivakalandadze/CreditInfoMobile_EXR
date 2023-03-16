@@ -1,0 +1,1149 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00E356F31AD99517003FC87E /* creditinfoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* creditinfoTests.m */; };
+		027D13BACCEC4B54A25C72ED /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7CDBDCA84A99464DB51F86B5 /* Roboto-Italic.ttf */; };
+		0B00387EE70A4222878AC45F /* NotoSansGeorgian-CondensedSemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2B58EA1B2E934EEE9E0C51FA /* NotoSansGeorgian-CondensedSemiBold.ttf */; };
+		0C80B921A6F3F58F76C31292 /* libPods-creditinfo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-creditinfo.a */; };
+		139F380285CA440FB0A6CC06 /* FiraGO-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 348F0CF1AA60459E86305E84 /* FiraGO-Medium.ttf */; };
+		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
+		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		13DD3CAB35EE49538BB8CAD0 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 93C36A22DAF9430DAF553895 /* OFL.txt */; };
+		18733FA6091747609361B422 /* NotoSansGeorgian-CondensedLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB09DB29B3854972A9410E0D /* NotoSansGeorgian-CondensedLight.ttf */; };
+		1920F5AA48AC40619FAD90A6 /* FiraGO-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E54387F906EA444FA77AABB3 /* FiraGO-MediumItalic.ttf */; };
+		2090A6BD961A46108340ACB9 /* NotoSansGeorgian-SemiCondensedBlack.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 06D4EEB159504E28A9556957 /* NotoSansGeorgian-SemiCondensedBlack.ttf */; };
+		22AD9125E3164CF5B0C92139 /* FiraGO-BookItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3FB728B8E6424FADBB01DF26 /* FiraGO-BookItalic.ttf */; };
+		24CD8E79865A4DB6A2679B3C /* NotoSansGeorgian-CondensedExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0998BD3CCBAC42849ABF0ABE /* NotoSansGeorgian-CondensedExtraBold.ttf */; };
+		27D5A40426ED4D249C572CF2 /* FiraGO-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BB73B652F635482B804A9671 /* FiraGO-SemiBoldItalic.ttf */; };
+		27D699F6AEDE4177B3081425 /* FiraGO-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74965F354C3045E696AB577C /* FiraGO-ExtraLightItalic.ttf */; };
+		28B5E9F72E604068B3F442E3 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 109C9151FE684754A6E8648D /* Roboto-BoldItalic.ttf */; };
+		2A1136B7C262417899F9507A /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED2E0F4B78B94C028AA83548 /* Roboto-Black.ttf */; };
+		2B733DEA298A488B84A5FA6C /* FiraGO-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A98BE0B3144404B81E3D0DE /* FiraGO-BoldItalic.ttf */; };
+		2BEAA318682D433E9AB366F5 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABC18483BB954C4B8D4BC30D /* Poppins-SemiBold.ttf */; };
+		2F8DEE88B73D4E609358A20E /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7B460C9E34EB405D85461668 /* Poppins-Black.ttf */; };
+		34D2332D6601401C9EB395B0 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 946C5AB026A247E9A8844445 /* LICENSE.txt */; };
+		3592D53EE55349A0BD386363 /* FiraGO-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8AA1083314E46158B1D9270 /* FiraGO-ExtraLight.ttf */; };
+		397354693F544FA788CE8A61 /* NotoSansGeorgian-CondensedBlack.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D805FDE5AF040AC92BCA268 /* NotoSansGeorgian-CondensedBlack.ttf */; };
+		39B86E84E0DA4FC08FB29C90 /* FiraGO-Hair.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA2CD6801EC14D42AD9D3412 /* FiraGO-Hair.ttf */; };
+		3C24D24C96BC4709953534B1 /* FiraGO-UltraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 414B9495A61B43BCA72721D2 /* FiraGO-UltraLight.ttf */; };
+		3C53384F8B584FA9BC439414 /* HelveticaNeue.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 916E5F49A0E845729795348A /* HelveticaNeue.ttf */; };
+		3E052532E2CB46498C1A0C1C /* NotoSansGeorgian-ExtraCondensedThin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CDE90644FBE848BF9632D6BE /* NotoSansGeorgian-ExtraCondensedThin.ttf */; };
+		3E05B8F1B6E3446F8D1428D8 /* FiraGO-EightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC5F6E4D0742458BBEE56670 /* FiraGO-EightItalic.ttf */; };
+		3E88F8317E7D47E284289EE3 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 49C5EF08B9FF4B94BEDAB2B3 /* Roboto-BlackItalic.ttf */; };
+		3E9AF0A4A9F048C48CDEE2D3 /* NotoSansGeorgian-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD04733A93C04D4D9B04B635 /* NotoSansGeorgian-Medium.ttf */; };
+		4407DD19FB164BABBF2BF3D7 /* NotoSansGeorgian-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 817D6F5CE769401FAB870BF3 /* NotoSansGeorgian-ExtraBold.ttf */; };
+		4E00915C46764DE1A7AC1E5B /* NotoSansGeorgian-SemiCondensedSemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39FCB1DDB12447E292ACEF04 /* NotoSansGeorgian-SemiCondensedSemiBold.ttf */; };
+		4E2D3C0DD6414311AE31FABA /* FiraGO-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC81873F69034B34BB02D291 /* FiraGO-Italic.ttf */; };
+		4F2915523F844AF3B53302E6 /* Poppins-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 762350F9E8034121AFC343A4 /* Poppins-BlackItalic.ttf */; };
+		51260D630C9B4FDC8A7E8C0B /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6C5E9652C3F0439E8218D02D /* Roboto-Thin.ttf */; };
+		513C740BC2DF4B3DA9F5261A /* FiraGO-FourItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1477C343ED1247CFB837F19D /* FiraGO-FourItalic.ttf */; };
+		52004D3725A04F92B00910A3 /* NotoSansGeorgian-SemiCondensedMedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5D9CD196A4F4869856FB2F4 /* NotoSansGeorgian-SemiCondensedMedium.ttf */; };
+		5AE393A4CEC840B7992D2460 /* NotoSansGeorgian-ExtraCondensedExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD3AF65EBE9F4804A95F65A0 /* NotoSansGeorgian-ExtraCondensedExtraBold.ttf */; };
+		5B96D41521F84516A1BF0E42 /* NotoSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1841699B8804AD3A8F46CBD /* NotoSans-BoldItalic.ttf */; };
+		5BC41722FC1A4B25A61A16E0 /* FiraGO-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF94960166D8475096F0F583 /* FiraGO-Heavy.ttf */; };
+		601512162A8947B0920780E1 /* NotoSansGeorgian-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA8CB422FF464536AC54ACF0 /* NotoSansGeorgian-Regular.ttf */; };
+		6218E7F3D26F4076B683059C /* NotoSansGeorgian-ExtraCondensedSemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 01460FC8EE5E42E6AC791932 /* NotoSansGeorgian-ExtraCondensedSemiBold.ttf */; };
+		623F8E139E894FF480F9C24F /* NotoSansGeorgian-SemiCondensedBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BB887E156B634AA396B992FB /* NotoSansGeorgian-SemiCondensedBold.ttf */; };
+		62CE68391F9241968108D1B3 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 565B921F8BBA40468BA448FC /* Poppins-Light.ttf */; };
+		63E027D4B2244C6DB8728A6B /* HelveticaNeueLTGEO65Mt-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74F26E8C49644FEE8BCC6BCF /* HelveticaNeueLTGEO65Mt-Medium.ttf */; };
+		660DC33E01764AC390031DB5 /* NotoSansGeorgian-SemiCondensedLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 13A97BE397354D3AA593EB3D /* NotoSansGeorgian-SemiCondensedLight.ttf */; };
+		6BB622263FAA419F801DCD4A /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 06D9F88CBBA947FBA89D96F4 /* Roboto-MediumItalic.ttf */; };
+		6DAB7168F2764D6E9E1055AB /* FiraGO-UltraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11A515209BA14D76A4CAE555 /* FiraGO-UltraLightItalic.ttf */; };
+		6EDF96516F474B9B895E85AF /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 674BE57E125640CD9D8A5C11 /* Roboto-ThinItalic.ttf */; };
+		742A1DC9891549C9A48A9FAA /* FiraGO-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDE098EC103F44808A1AB225 /* FiraGO-Thin.ttf */; };
+		7699B88040F8A987B510C191 /* libPods-creditinfo-creditinfoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-creditinfo-creditinfoTests.a */; };
+		78C3EA69C2884D67BB43539A /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C3700D2DD4A94142B806418D /* Poppins-Thin.ttf */; };
+		7EF5298187BB4C80A17D853E /* NotoSansGeorgian-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37A574BD2CBC476E84201700 /* NotoSansGeorgian-ExtraLight.ttf */; };
+		7F9FD83A2E9742549C475995 /* NotoSansGeorgian-CondensedThin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 27424F18F8E0492091A7AB59 /* NotoSansGeorgian-CondensedThin.ttf */; };
+		8118CFB5B2A7465D81EAD714 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7CB8820816E4122AB97F035 /* Poppins-Medium.ttf */; };
+		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		821CE31E69B843CAA86C5B55 /* LICENSE_OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1AE654963F744923BEE8E00D /* LICENSE_OFL.txt */; };
+		85D09DB318F14C3298EDB948 /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CB31CDAE2B949038510C48D /* Poppins-ExtraLight.ttf */; };
+		86FA536760DF4DC4B76C3F62 /* Poppins-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A1BA391AABC415593C47FE0 /* Poppins-LightItalic.ttf */; };
+		8766CE0E90634AAAB1D8493A /* Poppins-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6ED5118206774C2DAAEB8571 /* Poppins-ThinItalic.ttf */; };
+		880BCDA636D9453B8DF4B143 /* NotoSansGeorgian-ExtraCondensed.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5D7FE199E23F4C65948AE917 /* NotoSansGeorgian-ExtraCondensed.ttf */; };
+		89D4A224B72F4AD4A201DF73 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 09A9069D693E4DD2BF807C10 /* Roboto-Regular.ttf */; };
+		8D88C06208514E61AB58BEA8 /* FiraGO-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE397CC38299417CAEC3584A /* FiraGO-LightItalic.ttf */; };
+		90BE396DD7D940DAAD50683A /* FiraGO-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60F58A9AD25A4F94BD43B39F /* FiraGO-Regular.ttf */; };
+		9438E553DA6D40ECA72C0423 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D8E97DE68014BB3B0748F2B /* Roboto-Medium.ttf */; };
+		9875922382C146A497A43B44 /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8BEA4B3047445ECAC168F66 /* NotoSans-Regular.ttf */; };
+		9EFC057A93904DE5A50BE647 /* Poppins-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 28A3997CD5264FD1BCFD5820 /* Poppins-BoldItalic.ttf */; };
+		A21614B8C43A4A72AE56C756 /* HelveticaNeueLTGEO55Mt-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E2D09AC77F74AE59A4E72AA /* HelveticaNeueLTGEO55Mt-Regular.ttf */; };
+		A7811431BADA4318873CBB5C /* NotoSansGeorgian-ExtraCondensedBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 728C8AB392EC47C9AF523266 /* NotoSansGeorgian-ExtraCondensedBold.ttf */; };
+		A790767CB28F4F02B921D99D /* NotoSansGeorgian-ExtraCondensedLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CAB92594231D4A9BBB50AF8A /* NotoSansGeorgian-ExtraCondensedLight.ttf */; };
+		A97900E9FE744C61AB329C02 /* FiraGO-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8A5B8CF4C14D4F1485BAD1F6 /* FiraGO-ExtraBoldItalic.ttf */; };
+		AA47FB344E4D46D2AC11AD7A /* FiraGO-HeavyItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B6BF7416551D4658AB9AE3D3 /* FiraGO-HeavyItalic.ttf */; };
+		AB3E4529894C4960A82A75D6 /* FiraGO-Four.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B934EE936F3C4C03951D70EA /* FiraGO-Four.ttf */; };
+		ADECAD05FD82400AAFE9FB71 /* NotoSansGeorgian-SemiCondensedExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 22F56A82EF554555A5B09A44 /* NotoSansGeorgian-SemiCondensedExtraBold.ttf */; };
+		ADF7D2316E2C4C12B7AE410D /* FiraGO-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C66468648AEE472B8976DBA4 /* FiraGO-SemiBold.ttf */; };
+		B00A30FBD7B84EC992D00BF1 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3CA1DE8EB8FC4BFBB2142440 /* Poppins-Bold.ttf */; };
+		B72E30EEF87643688A74970D /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EB4F88F67CB04D4282030081 /* Poppins-ExtraBold.ttf */; };
+		BB2BCDD379664F7683D43693 /* FiraGO-HairItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C36B39CDEA074FC481360B37 /* FiraGO-HairItalic.ttf */; };
+		BBE69AA0523A43508AB0D68C /* NotoSansGeorgian-Condensed.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 75AC7B80E26545B4A814EC64 /* NotoSansGeorgian-Condensed.ttf */; };
+		BC6CAB0C6A37404CA4AA3A72 /* FiraGO-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D369656CBB404160A37D22BC /* FiraGO-Book.ttf */; };
+		BC96D98F23134F3281A1698C /* FiraGO-Eight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5E2C8289DEAD42BDB5A2E3B4 /* FiraGO-Eight.ttf */; };
+		C324C773F89A47E8A573CA05 /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A7FF063EE8D49879AA14527 /* Roboto-LightItalic.ttf */; };
+		C5D694E2744C42DCBB49B803 /* NotoSansGeorgian-SemiCondensed.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02FBD912596F419EAD9ABEE3 /* NotoSansGeorgian-SemiCondensed.ttf */; };
+		C6E87E5C494B44A0B90E2DD6 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E54BD0F97A814028B7464B5D /* Roboto-Bold.ttf */; };
+		CA06CB3C20C047EC93FAB213 /* FiraGO-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 383420C29F94418688DCDDED /* FiraGO-Light.ttf */; };
+		CCD02903A256424790CE2789 /* NotoSansGeorgian-SemiCondensedThin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F0C870A365B840B7B73B0950 /* NotoSansGeorgian-SemiCondensedThin.ttf */; };
+		CEE992BDB7C74738A4DDCCE5 /* Poppins-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B62EBF039E8E42998E271E71 /* Poppins-ExtraBoldItalic.ttf */; };
+		CF57403261CA4C978D314915 /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1F34EF24D0943DB82FC812B /* Poppins-MediumItalic.ttf */; };
+		CF9D0F447C294731B6E5748E /* NotoSansGeorgian-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0A337E3BDA04A738E8FEDCF /* NotoSansGeorgian-Thin.ttf */; };
+		D246AF5995184F118CA8EB6B /* FiraGO-TwoItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 66866736D3D64B1FBCA231A7 /* FiraGO-TwoItalic.ttf */; };
+		D3B75FCC744347E5B9A82A22 /* Poppins-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38F51BAE90A24BD3862642E4 /* Poppins-SemiBoldItalic.ttf */; };
+		D579585E15314D14B1BEF92B /* FiraGO-Two.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DFED7C50386841369B26C9E8 /* FiraGO-Two.ttf */; };
+		D67A75CCA5BF418B931EB2B7 /* NotoSansGeorgian-ExtraCondensedBlack.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C525244EC41248CD93318D31 /* NotoSansGeorgian-ExtraCondensedBlack.ttf */; };
+		D7C3C3224B4E402890731D3A /* FiraGO-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3EEBC30B36B545289286837D /* FiraGO-ExtraBold.ttf */; };
+		D8D9FD5E008444928E0FE06D /* NotoSansGeorgian-ExtraCondensedMedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0D2D98D2D1CE4322B07DE234 /* NotoSansGeorgian-ExtraCondensedMedium.ttf */; };
+		D93E830FD8D44F77B05C2760 /* NotoSansGeorgian-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 789CD09DCDB4452289EDD405 /* NotoSansGeorgian-SemiBold.ttf */; };
+		D97781450E934F76884C31A5 /* FiraGO-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02924720A33E4C84A4634BF3 /* FiraGO-Bold.ttf */; };
+		DA912F9CC01249829AAED297 /* NotoSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02A053B99C4B41369597DF95 /* NotoSans-Italic.ttf */; };
+		DD99654E37554A1BB34788A1 /* HelveticaNeue-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6EE0E46E2E04D19AEDE724C /* HelveticaNeue-Bold.ttf */; };
+		DEFBA25052F64B529DAE98DC /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C3322A61A3F419AA3B3EFE4 /* Roboto-Light.ttf */; };
+		DF0DA0A3F62448BC9B49B8B4 /* HelveticaNeue-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D3C1D933EF3E4DE8AE1FB9FB /* HelveticaNeue-Medium.ttf */; };
+		E1455AC84368470F9FF87355 /* Poppins-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BCE7ED4432884FB882E2F566 /* Poppins-ExtraLightItalic.ttf */; };
+		E1C3D18FD4DC4942A7A58F14 /* NotoSansGeorgian-ExtraCondensedExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26330BD2E39B422E85EBEB02 /* NotoSansGeorgian-ExtraCondensedExtraLight.ttf */; };
+		E2BC9484C74641F4BB57995C /* NotoSansGeorgian-CondensedExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D58967DAC6694B75AB1262B3 /* NotoSansGeorgian-CondensedExtraLight.ttf */; };
+		E486B48BC6004400B0C9B20C /* HelveticaNeueLTGEO75Mt-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0032EC3C9D1F4F25A1026774 /* HelveticaNeueLTGEO75Mt-Bold.ttf */; };
+		EBD0510325984CF397068837 /* NotoSansGeorgian-SemiCondensedExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C7751FCB0A64C0D91433F0A /* NotoSansGeorgian-SemiCondensedExtraLight.ttf */; };
+		F1F3328DEE8844688EE982EE /* FiraGO-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E8DDBE98002408CAD4E13F9 /* FiraGO-ThinItalic.ttf */; };
+		F2AF0C8872B44B9CBAA9CFE3 /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 102B506C16E54E9490B92A9C /* Poppins-Italic.ttf */; };
+		F3C30A14725D41D7A4C42BC9 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5210611CEFF44019325DCF7 /* Poppins-Regular.ttf */; };
+		F5FB925FA7824BBBBE8C5CFC /* NotoSansGeorgian-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B487CE11AEF24B47B838FDC8 /* NotoSansGeorgian-Black.ttf */; };
+		F92C380B1F6D485DBC8B17DA /* NotoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 162D2EA3D1F541F68004336A /* NotoSans-Bold.ttf */; };
+		F98266EF1864429FA1E36DB0 /* NotoSansGeorgian-CondensedMedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 885EB26E50B1450AA6C4D08B /* NotoSansGeorgian-CondensedMedium.ttf */; };
+		FAA475E627264E2B822A9AD4 /* NotoSansGeorgian-CondensedBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F861556774D7471FA8942606 /* NotoSansGeorgian-CondensedBold.ttf */; };
+		FC1C5439D46F4B7FB18BA5A1 /* NotoSansGeorgian-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2383D3571984628AE722241 /* NotoSansGeorgian-Bold.ttf */; };
+		FFA37E8FEF1441D6AE00F69B /* NotoSansGeorgian-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF93B9ECA48C4B6897114601 /* NotoSansGeorgian-Light.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00E356F41AD99517003FC87E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
+			remoteInfo = creditinfo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0032EC3C9D1F4F25A1026774 /* HelveticaNeueLTGEO75Mt-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "HelveticaNeueLTGEO75Mt-Bold.ttf"; path = "../src/assets/fonts/HelveticaNeueLTGEO75Mt-Bold.ttf"; sourceTree = "<group>"; };
+		00E356EE1AD99517003FC87E /* creditinfoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = creditinfoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* creditinfoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = creditinfoTests.m; sourceTree = "<group>"; };
+		01460FC8EE5E42E6AC791932 /* NotoSansGeorgian-ExtraCondensedSemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSansGeorgian-ExtraCondensedSemiBold.ttf"; path = "../src/assets/fonts/NotoSansGeorgian-ExtraCondensedSemiBold.ttf"; sourceTree = "<group>"; };
+		02924720A33E4C84A4634BF3 /* FiraGO-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FiraGO-Bold.ttf"; path = "../src/assets/fonts/FiraGO-Bold.ttf"; sourceTree = "<group>"; };
+		02A053B99C4B41369597DF95 /* NotoSans-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSans-Italic.ttf"; path = "../src/assets/fonts/NotoSans-Italic.ttf"; sourceTree = "<group>"; };
+		02FBD912596F419EAD9ABEE3 /* NotoSansGeorgian-SemiCondensed.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSansGeorgian-SemiCondensed.ttf"; path = "../src/assets/fonts/NotoSansGeorgian-SemiCondensed.ttf"; sourceTree = "<group>"; };
+		06D4EEB159504E28A9556957 /* NotoSansGeorgian-SemiCondensedBlack.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSansGeorgian-SemiCondensedBlack.ttf"; path = "../src/assets/fonts/NotoSansGeorgian-SemiCondensedBlack.ttf"; sourceTree = "<group>"; };
+		06D9F88CBBA947FBA89D96F4 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-MediumItalic.ttf"; path = "../src/assets/fonts/Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		0998BD3CCBAC42849ABF0ABE /* NotoSansGeorgian-CondensedExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSansGeorgian-CondensedExtraBold.ttf"; path = "../src/assets/fonts/NotoSansGeorgian-CondensedExtraBold.ttf"; sourceTree = "<group>"; };
+		09A9069D693E4DD2BF807C10 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Regular.ttf"; path = "../src/assets/fonts/Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		0A1BA391AABC415593C47FE0 /* Poppins-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-LightItalic.ttf"; path = "../src/assets/fonts/Poppins-LightItalic.ttf"; sourceTree = "<group>"; };
+		0A98BE0B3144404B81E3D0DE /* FiraGO-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FiraGO-BoldItalic.ttf"; path = "../src/assets/fonts/FiraGO-BoldItalic.ttf"; sourceTree = "<group>"; };
+		0D2D98D2D1CE4322B07DE234 /* NotoSansGeorgian-ExtraCondensedMedium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSansGeorgian-ExtraCondensedMedium.ttf"; path = "../src/assets/fonts/NotoSansGeorgian-ExtraCondensedMedium.ttf"; sourceTree = "<group>"; };
+		102B506C16E54E9490B92A9C /* Poppins-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Italic.ttf"; path = "../src/assets/fonts/Poppins-Italic.ttf"; sourceTree = "<group>"; };
+		109C9151FE684754A6E8648D /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-BoldItalic.ttf"; path = "../src/assets/fonts/Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		11A515209BA14D76A4CAE555 /* FiraGO-UltraLightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FiraGO-UltraLightItalic.ttf"; path = "../src/assets/fonts/FiraGO-UltraLightItalic.ttf"; sourceTree = "<group>"; };
+		13A97BE397354D3AA593EB3D /* NotoSansGeorgian-SemiCondensedLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSansGeorgian-SemiCondensedLight.ttf"; path = "../src/assets/fonts/NotoSansGeorgian-SemiCondensedLight.ttf"; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* creditinfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = creditinfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = creditinfo/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = creditinfo/AppDelegate.mm; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = creditinfo/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = creditinfo/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = creditinfo/main.m; sourceTree = "<group>"; };
+		1477C343ED1247CFB837F19D /* FiraGO-FourItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FiraGO-FourItalic.ttf"; path = "../src/assets/fonts/FiraGO-FourItalic.ttf"; sourceTree = "<group>"; };
+		162D2EA3D1F541F68004336A /* NotoSans-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSans-Bold.ttf"; path = "../src/assets/fonts/NotoSans-Bold.ttf"; sourceTree = "<group>"; };
+		19F6CBCC0A4E27FBF8BF4A61 /* libPods-creditinfo-creditinfoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-creditinfo-creditinfoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A7FF063EE8D49879AA14527 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-LightItalic.ttf"; path = "../src/assets/fonts/Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		1AE654963F744923BEE8E00D /* LICENSE_OFL.txt */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = LICENSE_OFL.txt; path = ../src/assets/fonts/LICENSE_OFL.txt; sourceTree = "<group>"; };
+		1CB31CDAE2B949038510C48D /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ExtraLight.ttf"; path = "../src/assets/fonts/Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
+		22F56A82EF554555A5B09A44 /* NotoSansGeorgian-SemiCondensedExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSansGeorgian-SemiCondensedExtraBold.ttf"; path = "../src/assets/fonts/NotoSansGeorgian-SemiCondensedExtraBold.ttf"; sourceTree = "<group>"; };
+		26330BD2E39B422E85EBEB02 /* NotoSansGeorgian-ExtraCondensedExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSansGeorgian-ExtraCondensedExtraLight.ttf"; path = "../src/assets/fonts/NotoSansGeorgian-ExtraCondensedExtraLight.ttf"; sourceTree = "<group>"; };
+		27424F18F8E0492091A7AB59 /* NotoSansGeorgian-CondensedThin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSansGeorgian-CondensedThin.ttf"; path = "../src/assets/fonts/NotoSansGeorgian-CondensedThin.ttf"; sourceTree = "<group>"; };
+		28A3997CD5264FD1BCFD5820 /* Poppins-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-BoldItalic.ttf"; path = "../src/assets/fonts/Poppins-BoldItalic.ttf"; sourceTree = "<group>"; };
+		2B58EA1B2E934EEE9E0C51FA /* NotoSansGeorgian-CondensedSemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSansGeorgian-CondensedSemiBold.ttf"; path = "../src/assets/fonts/NotoSansGeorgian-CondensedSemiBold.ttf"; sourceTree = "<group>"; };
+		348F0CF1AA60459E86305E84 /* FiraGO-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FiraGO-Medium.ttf"; path = "../src/assets/fonts/FiraGO-Medium.ttf"; sourceTree = "<group>"; };
+		37A574BD2CBC476E84201700 /* NotoSansGeorgian-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSansGeorgian-ExtraLight.ttf"; path = "../src/assets/fonts/NotoSansGeorgian-ExtraLight.ttf"; sourceTree = "<group>"; };
+		383420C29F94418688DCDDED /* FiraGO-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FiraGO-Light.ttf"; path = "../src/assets/fonts/FiraGO-Light.ttf"; sourceTree = "<group>"; };
+		38F51BAE90A24BD3862642E4 /* Poppins-SemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-SemiBoldItalic.ttf"; path = "../src/assets/fonts/Poppins-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		39FCB1DDB12447E292ACEF04 /* NotoSansGeorgian-SemiCondensedSemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSansGeorgian-SemiCondensedSemiBold.ttf"; path = "../src/assets/fonts/NotoSansGeorgian-SemiCondensedSemiBold.ttf"; sourceTree = "<group>"; };
+		3B4392A12AC88292D35C810B /* Pods-creditinfo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-creditinfo.debug.xcconfig"; path = "Target Support Files/Pods-creditinfo/Pods-creditinfo.debug.xcconfig"; sourceTree = "<group>"; };
+		3CA1DE8EB8FC4BFBB2142440 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Bold.ttf"; path = "../src/assets/fonts/Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		3D805FDE5AF040AC92BCA268 /* NotoSansGeorgian-CondensedBlack.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSansGeorgian-CondensedBlack.ttf"; path = "../src/assets/fonts/NotoSansGeorgian-CondensedBlack.ttf"; sourceTree = "<group>"; };
+		3D8E97DE68014BB3B0748F2B /* Roboto-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Medium.ttf"; path = "../src/assets/fonts/Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		3EEBC30B36B545289286837D /* FiraGO-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FiraGO-ExtraBold.ttf"; path = "../src/assets/fonts/FiraGO-ExtraBold.ttf"; sourceTree = "<group>"; };
+		3FB728B8E6424FADBB01DF26 /* FiraGO-BookItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FiraGO-BookItalic.ttf"; path = "../src/assets/fonts/FiraGO-BookItalic.ttf"; sourceTree = "<group>"; };
+		414B9495A61B43BCA72721D2 /* FiraGO-UltraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FiraGO-UltraLight.ttf"; path = "../src/assets/fonts/FiraGO-UltraLight.ttf"; sourceTree = "<group>"; };
+		49C5EF08B9FF4B94BEDAB2B3 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-BlackItalic.ttf"; path = "../src/assets/fonts/Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		4C3322A61A3F419AA3B3EFE4 /* Roboto-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Light.ttf"; path = "../src/assets/fonts/Roboto-Light.ttf"; sourceTree = "<group>"; };
+		565B921F8BBA40468BA448FC /* Poppins-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Light.ttf"; path = "../src/assets/fonts/Poppins-Light.ttf"; sourceTree = "<group>"; };
+		5709B34CF0A7D63546082F79 /* Pods-creditinfo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-creditinfo.release.xcconfig"; path = "Target Support Files/Pods-creditinfo/Pods-creditinfo.release.xcconfig"; sourceTree = "<group>"; };
+		5B7EB9410499542E8C5724F5 /* Pods-creditinfo-creditinfoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-creditinfo-creditinfoTests.debug.xcconfig"; path = "Target Support Files/Pods-creditinfo-creditinfoTests/Pods-creditinfo-creditinfoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5D7FE199E23F4C65948AE917 /* NotoSansGeorgian-ExtraCondensed.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSansGeorgian-ExtraCondensed.ttf"; path = "../src/assets/fonts/NotoSansGeorgian-ExtraCondensed.ttf"; sourceTree = "<group>"; };
+		5DCACB8F33CDC322A6C60F78 /* libPods-creditinfo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-creditinfo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E2C8289DEAD42BDB5A2E3B4 /* FiraGO-Eight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FiraGO-Eight.ttf"; path = "../src/assets/fonts/FiraGO-Eight.ttf"; sourceTree = "<group>"; };
+		60F58A9AD25A4F94BD43B39F /* FiraGO-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FiraGO-Regular.ttf"; path = "../src/assets/fonts/FiraGO-Regular.ttf"; sourceTree = "<group>"; };
+		66866736D3D64B1FBCA231A7 /* FiraGO-TwoItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FiraGO-TwoItalic.ttf"; path = "../src/assets/fonts/FiraGO-TwoItalic.ttf"; sourceTree = "<group>"; };
+		674BE57E125640CD9D8A5C11 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-ThinItalic.ttf"; path = "../src/assets/fonts/Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		6C5E9652C3F0439E8218D02D /* Roboto-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Thin.ttf"; path = "../src/assets/fonts/Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		6ED5118206774C2DAAEB8571 /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ThinItalic.ttf"; path = "../src/assets/fonts/Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
+		728C8AB392EC47C9AF523266 /* NotoSansGeorgian-ExtraCondensedBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSansGeorgian-ExtraCondensedBold.ttf"; path = "../src/assets/fonts/NotoSansGeorgian-ExtraCondensedBold.ttf"; sourceTree = "<group>"; };
+		74965F354C3045E696AB577C /* FiraGO-ExtraLightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FiraGO-ExtraLightItalic.ttf"; path = "../src/assets/fonts/FiraGO-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		74F26E8C49644FEE8BCC6BCF /* HelveticaNeueLTGEO65Mt-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "HelveticaNeueLTGEO65Mt-Medium.ttf"; path = "../src/assets/fonts/HelveticaNeueLTGEO65Mt-Medium.ttf"; sourceTree = "<group>"; };
+		75AC7B80E26545B4A814EC64 /* NotoSansGeorgian-Condensed.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSansGeorgian-Condensed.ttf"; path = "../src/assets/fonts/NotoSansGeorgian-Condensed.ttf"; sourceTree = "<group>"; };
+		762350F9E8034121AFC343A4 /* Poppins-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-BlackItalic.ttf"; path = "../src/assets/fonts/Poppins-BlackItalic.ttf"; sourceTree = "<group>"; };
+		789CD09DCDB4452289EDD405 /* NotoSansGeorgian-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSansGeorgian-SemiBold.ttf"; path = "../src/assets/fonts/NotoSansGeorgian-SemiBold.ttf"; sourceTree = "<group>"; };
+		7B460C9E34EB405D85461668 /* Poppins-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Black.ttf"; path = "../src/assets/fonts/Poppins-Black.ttf"; sourceTree = "<group>"; };
+		7CDBDCA84A99464DB51F86B5 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Italic.ttf"; path = "../src/assets/fonts/Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		7E8DDBE98002408CAD4E13F9 /* FiraGO-ThinItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FiraGO-ThinItalic.ttf"; path = "../src/assets/fonts/FiraGO-ThinItalic.ttf"; sourceTree = "<group>"; };
+		817D6F5CE769401FAB870BF3 /* NotoSansGeorgian-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSansGeorgian-ExtraBold.ttf"; path = "../src/assets/fonts/NotoSansGeorgian-ExtraBold.ttf"; sourceTree = "<group>"; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = creditinfo/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		885EB26E50B1450AA6C4D08B /* NotoSansGeorgian-CondensedMedium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSansGeorgian-CondensedMedium.ttf"; path = "../src/assets/fonts/NotoSansGeorgian-CondensedMedium.ttf"; sourceTree = "<group>"; };
+		89C6BE57DB24E9ADA2F236DE /* Pods-creditinfo-creditinfoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-creditinfo-creditinfoTests.release.xcconfig"; path = "Target Support Files/Pods-creditinfo-creditinfoTests/Pods-creditinfo-creditinfoTests.release.xcconfig"; sourceTree = "<group>"; };
+		8A5B8CF4C14D4F1485BAD1F6 /* FiraGO-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FiraGO-ExtraBoldItalic.ttf"; path = "../src/assets/fonts/FiraGO-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		916E5F49A0E845729795348A /* HelveticaNeue.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = HelveticaNeue.ttf; path = ../src/assets/fonts/HelveticaNeue.ttf; sourceTree = "<group>"; };
+		93C36A22DAF9430DAF553895 /* OFL.txt */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = OFL.txt; path = ../src/assets/fonts/OFL.txt; sourceTree = "<group>"; };
+		946C5AB026A247E9A8844445 /* LICENSE.txt */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = LICENSE.txt; path = ../src/assets/fonts/LICENSE.txt; sourceTree = "<group>"; };
+		9C7751FCB0A64C0D91433F0A /* NotoSansGeorgian-SemiCondensedExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSansGeorgian-SemiCondensedExtraLight.ttf"; path = "../src/assets/fonts/NotoSansGeorgian-SemiCondensedExtraLight.ttf"; sourceTree = "<group>"; };
+		9E2D09AC77F74AE59A4E72AA /* HelveticaNeueLTGEO55Mt-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "HelveticaNeueLTGEO55Mt-Regular.ttf"; path = "../src/assets/fonts/HelveticaNeueLTGEO55Mt-Regular.ttf"; sourceTree = "<group>"; };
+		A0A337E3BDA04A738E8FEDCF /* NotoSansGeorgian-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSansGeorgian-Thin.ttf"; path = "../src/assets/fonts/NotoSansGeorgian-Thin.ttf"; sourceTree = "<group>"; };
+		ABC18483BB954C4B8D4BC30D /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-SemiBold.ttf"; path = "../src/assets/fonts/Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		AD04733A93C04D4D9B04B635 /* NotoSansGeorgian-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSansGeorgian-Medium.ttf"; path = "../src/assets/fonts/NotoSansGeorgian-Medium.ttf"; sourceTree = "<group>"; };
+		B487CE11AEF24B47B838FDC8 /* NotoSansGeorgian-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSansGeorgian-Black.ttf"; path = "../src/assets/fonts/NotoSansGeorgian-Black.ttf"; sourceTree = "<group>"; };
+		B62EBF039E8E42998E271E71 /* Poppins-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ExtraBoldItalic.ttf"; path = "../src/assets/fonts/Poppins-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		B6BF7416551D4658AB9AE3D3 /* FiraGO-HeavyItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FiraGO-HeavyItalic.ttf"; path = "../src/assets/fonts/FiraGO-HeavyItalic.ttf"; sourceTree = "<group>"; };
+		B934EE936F3C4C03951D70EA /* FiraGO-Four.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FiraGO-Four.ttf"; path = "../src/assets/fonts/FiraGO-Four.ttf"; sourceTree = "<group>"; };
+		BB73B652F635482B804A9671 /* FiraGO-SemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FiraGO-SemiBoldItalic.ttf"; path = "../src/assets/fonts/FiraGO-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		BB887E156B634AA396B992FB /* NotoSansGeorgian-SemiCondensedBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSansGeorgian-SemiCondensedBold.ttf"; path = "../src/assets/fonts/NotoSansGeorgian-SemiCondensedBold.ttf"; sourceTree = "<group>"; };
+		BCE7ED4432884FB882E2F566 /* Poppins-ExtraLightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ExtraLightItalic.ttf"; path = "../src/assets/fonts/Poppins-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		BE397CC38299417CAEC3584A /* FiraGO-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FiraGO-LightItalic.ttf"; path = "../src/assets/fonts/FiraGO-LightItalic.ttf"; sourceTree = "<group>"; };
+		C2383D3571984628AE722241 /* NotoSansGeorgian-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSansGeorgian-Bold.ttf"; path = "../src/assets/fonts/NotoSansGeorgian-Bold.ttf"; sourceTree = "<group>"; };
+		C36B39CDEA074FC481360B37 /* FiraGO-HairItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FiraGO-HairItalic.ttf"; path = "../src/assets/fonts/FiraGO-HairItalic.ttf"; sourceTree = "<group>"; };
+		C3700D2DD4A94142B806418D /* Poppins-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Thin.ttf"; path = "../src/assets/fonts/Poppins-Thin.ttf"; sourceTree = "<group>"; };
+		C525244EC41248CD93318D31 /* NotoSansGeorgian-ExtraCondensedBlack.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSansGeorgian-ExtraCondensedBlack.ttf"; path = "../src/assets/fonts/NotoSansGeorgian-ExtraCondensedBlack.ttf"; sourceTree = "<group>"; };
+		C66468648AEE472B8976DBA4 /* FiraGO-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FiraGO-SemiBold.ttf"; path = "../src/assets/fonts/FiraGO-SemiBold.ttf"; sourceTree = "<group>"; };
+		C6EE0E46E2E04D19AEDE724C /* HelveticaNeue-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "HelveticaNeue-Bold.ttf"; path = "../src/assets/fonts/HelveticaNeue-Bold.ttf"; sourceTree = "<group>"; };
+		C8AA1083314E46158B1D9270 /* FiraGO-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FiraGO-ExtraLight.ttf"; path = "../src/assets/fonts/FiraGO-ExtraLight.ttf"; sourceTree = "<group>"; };
+		CAB92594231D4A9BBB50AF8A /* NotoSansGeorgian-ExtraCondensedLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSansGeorgian-ExtraCondensedLight.ttf"; path = "../src/assets/fonts/NotoSansGeorgian-ExtraCondensedLight.ttf"; sourceTree = "<group>"; };
+		CDE90644FBE848BF9632D6BE /* NotoSansGeorgian-ExtraCondensedThin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSansGeorgian-ExtraCondensedThin.ttf"; path = "../src/assets/fonts/NotoSansGeorgian-ExtraCondensedThin.ttf"; sourceTree = "<group>"; };
+		D369656CBB404160A37D22BC /* FiraGO-Book.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FiraGO-Book.ttf"; path = "../src/assets/fonts/FiraGO-Book.ttf"; sourceTree = "<group>"; };
+		D3C1D933EF3E4DE8AE1FB9FB /* HelveticaNeue-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "HelveticaNeue-Medium.ttf"; path = "../src/assets/fonts/HelveticaNeue-Medium.ttf"; sourceTree = "<group>"; };
+		D58967DAC6694B75AB1262B3 /* NotoSansGeorgian-CondensedExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSansGeorgian-CondensedExtraLight.ttf"; path = "../src/assets/fonts/NotoSansGeorgian-CondensedExtraLight.ttf"; sourceTree = "<group>"; };
+		DA2CD6801EC14D42AD9D3412 /* FiraGO-Hair.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FiraGO-Hair.ttf"; path = "../src/assets/fonts/FiraGO-Hair.ttf"; sourceTree = "<group>"; };
+		DB09DB29B3854972A9410E0D /* NotoSansGeorgian-CondensedLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSansGeorgian-CondensedLight.ttf"; path = "../src/assets/fonts/NotoSansGeorgian-CondensedLight.ttf"; sourceTree = "<group>"; };
+		DC5F6E4D0742458BBEE56670 /* FiraGO-EightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FiraGO-EightItalic.ttf"; path = "../src/assets/fonts/FiraGO-EightItalic.ttf"; sourceTree = "<group>"; };
+		DDE098EC103F44808A1AB225 /* FiraGO-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FiraGO-Thin.ttf"; path = "../src/assets/fonts/FiraGO-Thin.ttf"; sourceTree = "<group>"; };
+		DFED7C50386841369B26C9E8 /* FiraGO-Two.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FiraGO-Two.ttf"; path = "../src/assets/fonts/FiraGO-Two.ttf"; sourceTree = "<group>"; };
+		E1841699B8804AD3A8F46CBD /* NotoSans-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSans-BoldItalic.ttf"; path = "../src/assets/fonts/NotoSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		E5210611CEFF44019325DCF7 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Regular.ttf"; path = "../src/assets/fonts/Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		E54387F906EA444FA77AABB3 /* FiraGO-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FiraGO-MediumItalic.ttf"; path = "../src/assets/fonts/FiraGO-MediumItalic.ttf"; sourceTree = "<group>"; };
+		E54BD0F97A814028B7464B5D /* Roboto-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Bold.ttf"; path = "../src/assets/fonts/Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		E7CB8820816E4122AB97F035 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Medium.ttf"; path = "../src/assets/fonts/Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		EB4F88F67CB04D4282030081 /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ExtraBold.ttf"; path = "../src/assets/fonts/Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
+		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		ED2E0F4B78B94C028AA83548 /* Roboto-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Black.ttf"; path = "../src/assets/fonts/Roboto-Black.ttf"; sourceTree = "<group>"; };
+		EF93B9ECA48C4B6897114601 /* NotoSansGeorgian-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSansGeorgian-Light.ttf"; path = "../src/assets/fonts/NotoSansGeorgian-Light.ttf"; sourceTree = "<group>"; };
+		EF94960166D8475096F0F583 /* FiraGO-Heavy.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FiraGO-Heavy.ttf"; path = "../src/assets/fonts/FiraGO-Heavy.ttf"; sourceTree = "<group>"; };
+		F0C870A365B840B7B73B0950 /* NotoSansGeorgian-SemiCondensedThin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSansGeorgian-SemiCondensedThin.ttf"; path = "../src/assets/fonts/NotoSansGeorgian-SemiCondensedThin.ttf"; sourceTree = "<group>"; };
+		F1F34EF24D0943DB82FC812B /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-MediumItalic.ttf"; path = "../src/assets/fonts/Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
+		F5D9CD196A4F4869856FB2F4 /* NotoSansGeorgian-SemiCondensedMedium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSansGeorgian-SemiCondensedMedium.ttf"; path = "../src/assets/fonts/NotoSansGeorgian-SemiCondensedMedium.ttf"; sourceTree = "<group>"; };
+		F861556774D7471FA8942606 /* NotoSansGeorgian-CondensedBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSansGeorgian-CondensedBold.ttf"; path = "../src/assets/fonts/NotoSansGeorgian-CondensedBold.ttf"; sourceTree = "<group>"; };
+		F8BEA4B3047445ECAC168F66 /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSans-Regular.ttf"; path = "../src/assets/fonts/NotoSans-Regular.ttf"; sourceTree = "<group>"; };
+		FA8CB422FF464536AC54ACF0 /* NotoSansGeorgian-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSansGeorgian-Regular.ttf"; path = "../src/assets/fonts/NotoSansGeorgian-Regular.ttf"; sourceTree = "<group>"; };
+		FC81873F69034B34BB02D291 /* FiraGO-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FiraGO-Italic.ttf"; path = "../src/assets/fonts/FiraGO-Italic.ttf"; sourceTree = "<group>"; };
+		FD3AF65EBE9F4804A95F65A0 /* NotoSansGeorgian-ExtraCondensedExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSansGeorgian-ExtraCondensedExtraBold.ttf"; path = "../src/assets/fonts/NotoSansGeorgian-ExtraCondensedExtraBold.ttf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00E356EB1AD99517003FC87E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7699B88040F8A987B510C191 /* libPods-creditinfo-creditinfoTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C80B921A6F3F58F76C31292 /* libPods-creditinfo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00E356EF1AD99517003FC87E /* creditinfoTests */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F21AD99517003FC87E /* creditinfoTests.m */,
+				00E356F01AD99517003FC87E /* Supporting Files */,
+			);
+			path = creditinfoTests;
+			sourceTree = "<group>";
+		};
+		00E356F01AD99517003FC87E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F11AD99517003FC87E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		13B07FAE1A68108700A75B9A /* creditinfo */ = {
+			isa = PBXGroup;
+			children = (
+				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
+				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
+				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				13B07FB61A68108700A75B9A /* Info.plist */,
+				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
+				13B07FB71A68108700A75B9A /* main.m */,
+			);
+			name = creditinfo;
+			sourceTree = "<group>";
+		};
+		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
+				5DCACB8F33CDC322A6C60F78 /* libPods-creditinfo.a */,
+				19F6CBCC0A4E27FBF8BF4A61 /* libPods-creditinfo-creditinfoTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		83CBB9F61A601CBA00E9B192 = {
+			isa = PBXGroup;
+			children = (
+				13B07FAE1A68108700A75B9A /* creditinfo */,
+				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				00E356EF1AD99517003FC87E /* creditinfoTests */,
+				83CBBA001A601CBA00E9B192 /* Products */,
+				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				CD2A3D3FE85E41569B5EC9D6 /* Resources */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
+		};
+		83CBBA001A601CBA00E9B192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13B07F961A680F5B00A75B9A /* creditinfo.app */,
+				00E356EE1AD99517003FC87E /* creditinfoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B4392A12AC88292D35C810B /* Pods-creditinfo.debug.xcconfig */,
+				5709B34CF0A7D63546082F79 /* Pods-creditinfo.release.xcconfig */,
+				5B7EB9410499542E8C5724F5 /* Pods-creditinfo-creditinfoTests.debug.xcconfig */,
+				89C6BE57DB24E9ADA2F236DE /* Pods-creditinfo-creditinfoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CD2A3D3FE85E41569B5EC9D6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				02924720A33E4C84A4634BF3 /* FiraGO-Bold.ttf */,
+				0A98BE0B3144404B81E3D0DE /* FiraGO-BoldItalic.ttf */,
+				D369656CBB404160A37D22BC /* FiraGO-Book.ttf */,
+				3FB728B8E6424FADBB01DF26 /* FiraGO-BookItalic.ttf */,
+				5E2C8289DEAD42BDB5A2E3B4 /* FiraGO-Eight.ttf */,
+				DC5F6E4D0742458BBEE56670 /* FiraGO-EightItalic.ttf */,
+				3EEBC30B36B545289286837D /* FiraGO-ExtraBold.ttf */,
+				8A5B8CF4C14D4F1485BAD1F6 /* FiraGO-ExtraBoldItalic.ttf */,
+				C8AA1083314E46158B1D9270 /* FiraGO-ExtraLight.ttf */,
+				74965F354C3045E696AB577C /* FiraGO-ExtraLightItalic.ttf */,
+				B934EE936F3C4C03951D70EA /* FiraGO-Four.ttf */,
+				1477C343ED1247CFB837F19D /* FiraGO-FourItalic.ttf */,
+				DA2CD6801EC14D42AD9D3412 /* FiraGO-Hair.ttf */,
+				C36B39CDEA074FC481360B37 /* FiraGO-HairItalic.ttf */,
+				EF94960166D8475096F0F583 /* FiraGO-Heavy.ttf */,
+				B6BF7416551D4658AB9AE3D3 /* FiraGO-HeavyItalic.ttf */,
+				FC81873F69034B34BB02D291 /* FiraGO-Italic.ttf */,
+				383420C29F94418688DCDDED /* FiraGO-Light.ttf */,
+				BE397CC38299417CAEC3584A /* FiraGO-LightItalic.ttf */,
+				348F0CF1AA60459E86305E84 /* FiraGO-Medium.ttf */,
+				E54387F906EA444FA77AABB3 /* FiraGO-MediumItalic.ttf */,
+				60F58A9AD25A4F94BD43B39F /* FiraGO-Regular.ttf */,
+				C66468648AEE472B8976DBA4 /* FiraGO-SemiBold.ttf */,
+				BB73B652F635482B804A9671 /* FiraGO-SemiBoldItalic.ttf */,
+				DDE098EC103F44808A1AB225 /* FiraGO-Thin.ttf */,
+				7E8DDBE98002408CAD4E13F9 /* FiraGO-ThinItalic.ttf */,
+				DFED7C50386841369B26C9E8 /* FiraGO-Two.ttf */,
+				66866736D3D64B1FBCA231A7 /* FiraGO-TwoItalic.ttf */,
+				414B9495A61B43BCA72721D2 /* FiraGO-UltraLight.ttf */,
+				11A515209BA14D76A4CAE555 /* FiraGO-UltraLightItalic.ttf */,
+				C6EE0E46E2E04D19AEDE724C /* HelveticaNeue-Bold.ttf */,
+				D3C1D933EF3E4DE8AE1FB9FB /* HelveticaNeue-Medium.ttf */,
+				916E5F49A0E845729795348A /* HelveticaNeue.ttf */,
+				9E2D09AC77F74AE59A4E72AA /* HelveticaNeueLTGEO55Mt-Regular.ttf */,
+				74F26E8C49644FEE8BCC6BCF /* HelveticaNeueLTGEO65Mt-Medium.ttf */,
+				0032EC3C9D1F4F25A1026774 /* HelveticaNeueLTGEO75Mt-Bold.ttf */,
+				162D2EA3D1F541F68004336A /* NotoSans-Bold.ttf */,
+				E1841699B8804AD3A8F46CBD /* NotoSans-BoldItalic.ttf */,
+				02A053B99C4B41369597DF95 /* NotoSans-Italic.ttf */,
+				F8BEA4B3047445ECAC168F66 /* NotoSans-Regular.ttf */,
+				B487CE11AEF24B47B838FDC8 /* NotoSansGeorgian-Black.ttf */,
+				C2383D3571984628AE722241 /* NotoSansGeorgian-Bold.ttf */,
+				75AC7B80E26545B4A814EC64 /* NotoSansGeorgian-Condensed.ttf */,
+				3D805FDE5AF040AC92BCA268 /* NotoSansGeorgian-CondensedBlack.ttf */,
+				F861556774D7471FA8942606 /* NotoSansGeorgian-CondensedBold.ttf */,
+				0998BD3CCBAC42849ABF0ABE /* NotoSansGeorgian-CondensedExtraBold.ttf */,
+				D58967DAC6694B75AB1262B3 /* NotoSansGeorgian-CondensedExtraLight.ttf */,
+				DB09DB29B3854972A9410E0D /* NotoSansGeorgian-CondensedLight.ttf */,
+				885EB26E50B1450AA6C4D08B /* NotoSansGeorgian-CondensedMedium.ttf */,
+				2B58EA1B2E934EEE9E0C51FA /* NotoSansGeorgian-CondensedSemiBold.ttf */,
+				27424F18F8E0492091A7AB59 /* NotoSansGeorgian-CondensedThin.ttf */,
+				817D6F5CE769401FAB870BF3 /* NotoSansGeorgian-ExtraBold.ttf */,
+				5D7FE199E23F4C65948AE917 /* NotoSansGeorgian-ExtraCondensed.ttf */,
+				C525244EC41248CD93318D31 /* NotoSansGeorgian-ExtraCondensedBlack.ttf */,
+				728C8AB392EC47C9AF523266 /* NotoSansGeorgian-ExtraCondensedBold.ttf */,
+				FD3AF65EBE9F4804A95F65A0 /* NotoSansGeorgian-ExtraCondensedExtraBold.ttf */,
+				26330BD2E39B422E85EBEB02 /* NotoSansGeorgian-ExtraCondensedExtraLight.ttf */,
+				CAB92594231D4A9BBB50AF8A /* NotoSansGeorgian-ExtraCondensedLight.ttf */,
+				0D2D98D2D1CE4322B07DE234 /* NotoSansGeorgian-ExtraCondensedMedium.ttf */,
+				01460FC8EE5E42E6AC791932 /* NotoSansGeorgian-ExtraCondensedSemiBold.ttf */,
+				CDE90644FBE848BF9632D6BE /* NotoSansGeorgian-ExtraCondensedThin.ttf */,
+				37A574BD2CBC476E84201700 /* NotoSansGeorgian-ExtraLight.ttf */,
+				EF93B9ECA48C4B6897114601 /* NotoSansGeorgian-Light.ttf */,
+				AD04733A93C04D4D9B04B635 /* NotoSansGeorgian-Medium.ttf */,
+				FA8CB422FF464536AC54ACF0 /* NotoSansGeorgian-Regular.ttf */,
+				789CD09DCDB4452289EDD405 /* NotoSansGeorgian-SemiBold.ttf */,
+				02FBD912596F419EAD9ABEE3 /* NotoSansGeorgian-SemiCondensed.ttf */,
+				06D4EEB159504E28A9556957 /* NotoSansGeorgian-SemiCondensedBlack.ttf */,
+				BB887E156B634AA396B992FB /* NotoSansGeorgian-SemiCondensedBold.ttf */,
+				22F56A82EF554555A5B09A44 /* NotoSansGeorgian-SemiCondensedExtraBold.ttf */,
+				9C7751FCB0A64C0D91433F0A /* NotoSansGeorgian-SemiCondensedExtraLight.ttf */,
+				13A97BE397354D3AA593EB3D /* NotoSansGeorgian-SemiCondensedLight.ttf */,
+				F5D9CD196A4F4869856FB2F4 /* NotoSansGeorgian-SemiCondensedMedium.ttf */,
+				39FCB1DDB12447E292ACEF04 /* NotoSansGeorgian-SemiCondensedSemiBold.ttf */,
+				F0C870A365B840B7B73B0950 /* NotoSansGeorgian-SemiCondensedThin.ttf */,
+				A0A337E3BDA04A738E8FEDCF /* NotoSansGeorgian-Thin.ttf */,
+				7B460C9E34EB405D85461668 /* Poppins-Black.ttf */,
+				762350F9E8034121AFC343A4 /* Poppins-BlackItalic.ttf */,
+				3CA1DE8EB8FC4BFBB2142440 /* Poppins-Bold.ttf */,
+				28A3997CD5264FD1BCFD5820 /* Poppins-BoldItalic.ttf */,
+				EB4F88F67CB04D4282030081 /* Poppins-ExtraBold.ttf */,
+				B62EBF039E8E42998E271E71 /* Poppins-ExtraBoldItalic.ttf */,
+				1CB31CDAE2B949038510C48D /* Poppins-ExtraLight.ttf */,
+				BCE7ED4432884FB882E2F566 /* Poppins-ExtraLightItalic.ttf */,
+				102B506C16E54E9490B92A9C /* Poppins-Italic.ttf */,
+				565B921F8BBA40468BA448FC /* Poppins-Light.ttf */,
+				0A1BA391AABC415593C47FE0 /* Poppins-LightItalic.ttf */,
+				E7CB8820816E4122AB97F035 /* Poppins-Medium.ttf */,
+				F1F34EF24D0943DB82FC812B /* Poppins-MediumItalic.ttf */,
+				E5210611CEFF44019325DCF7 /* Poppins-Regular.ttf */,
+				ABC18483BB954C4B8D4BC30D /* Poppins-SemiBold.ttf */,
+				38F51BAE90A24BD3862642E4 /* Poppins-SemiBoldItalic.ttf */,
+				C3700D2DD4A94142B806418D /* Poppins-Thin.ttf */,
+				6ED5118206774C2DAAEB8571 /* Poppins-ThinItalic.ttf */,
+				ED2E0F4B78B94C028AA83548 /* Roboto-Black.ttf */,
+				49C5EF08B9FF4B94BEDAB2B3 /* Roboto-BlackItalic.ttf */,
+				E54BD0F97A814028B7464B5D /* Roboto-Bold.ttf */,
+				109C9151FE684754A6E8648D /* Roboto-BoldItalic.ttf */,
+				7CDBDCA84A99464DB51F86B5 /* Roboto-Italic.ttf */,
+				4C3322A61A3F419AA3B3EFE4 /* Roboto-Light.ttf */,
+				1A7FF063EE8D49879AA14527 /* Roboto-LightItalic.ttf */,
+				3D8E97DE68014BB3B0748F2B /* Roboto-Medium.ttf */,
+				06D9F88CBBA947FBA89D96F4 /* Roboto-MediumItalic.ttf */,
+				09A9069D693E4DD2BF807C10 /* Roboto-Regular.ttf */,
+				6C5E9652C3F0439E8218D02D /* Roboto-Thin.ttf */,
+				674BE57E125640CD9D8A5C11 /* Roboto-ThinItalic.ttf */,
+				946C5AB026A247E9A8844445 /* LICENSE.txt */,
+				1AE654963F744923BEE8E00D /* LICENSE_OFL.txt */,
+				93C36A22DAF9430DAF553895 /* OFL.txt */,
+			);
+			name = Resources;
+			path = "";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00E356ED1AD99517003FC87E /* creditinfoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "creditinfoTests" */;
+			buildPhases = (
+				A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */,
+				00E356EA1AD99517003FC87E /* Sources */,
+				00E356EB1AD99517003FC87E /* Frameworks */,
+				00E356EC1AD99517003FC87E /* Resources */,
+				C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */,
+				F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00E356F51AD99517003FC87E /* PBXTargetDependency */,
+			);
+			name = creditinfoTests;
+			productName = creditinfoTests;
+			productReference = 00E356EE1AD99517003FC87E /* creditinfoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		13B07F861A680F5B00A75B9A /* creditinfo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "creditinfo" */;
+			buildPhases = (
+				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
+				FD10A7F022414F080027D42C /* Start Packager */,
+				13B07F871A680F5B00A75B9A /* Sources */,
+				13B07F8C1A680F5B00A75B9A /* Frameworks */,
+				13B07F8E1A680F5B00A75B9A /* Resources */,
+				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
+				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = creditinfo;
+			productName = creditinfo;
+			productReference = 13B07F961A680F5B00A75B9A /* creditinfo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83CBB9F71A601CBA00E9B192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					00E356ED1AD99517003FC87E = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						LastSwiftMigration = 1120;
+					};
+				};
+			};
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "creditinfo" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83CBB9F61A601CBA00E9B192;
+			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13B07F861A680F5B00A75B9A /* creditinfo */,
+				00E356ED1AD99517003FC87E /* creditinfoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00E356EC1AD99517003FC87E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8E1A680F5B00A75B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				D97781450E934F76884C31A5 /* FiraGO-Bold.ttf in Resources */,
+				2B733DEA298A488B84A5FA6C /* FiraGO-BoldItalic.ttf in Resources */,
+				BC6CAB0C6A37404CA4AA3A72 /* FiraGO-Book.ttf in Resources */,
+				22AD9125E3164CF5B0C92139 /* FiraGO-BookItalic.ttf in Resources */,
+				BC96D98F23134F3281A1698C /* FiraGO-Eight.ttf in Resources */,
+				3E05B8F1B6E3446F8D1428D8 /* FiraGO-EightItalic.ttf in Resources */,
+				D7C3C3224B4E402890731D3A /* FiraGO-ExtraBold.ttf in Resources */,
+				A97900E9FE744C61AB329C02 /* FiraGO-ExtraBoldItalic.ttf in Resources */,
+				3592D53EE55349A0BD386363 /* FiraGO-ExtraLight.ttf in Resources */,
+				27D699F6AEDE4177B3081425 /* FiraGO-ExtraLightItalic.ttf in Resources */,
+				AB3E4529894C4960A82A75D6 /* FiraGO-Four.ttf in Resources */,
+				513C740BC2DF4B3DA9F5261A /* FiraGO-FourItalic.ttf in Resources */,
+				39B86E84E0DA4FC08FB29C90 /* FiraGO-Hair.ttf in Resources */,
+				BB2BCDD379664F7683D43693 /* FiraGO-HairItalic.ttf in Resources */,
+				5BC41722FC1A4B25A61A16E0 /* FiraGO-Heavy.ttf in Resources */,
+				AA47FB344E4D46D2AC11AD7A /* FiraGO-HeavyItalic.ttf in Resources */,
+				4E2D3C0DD6414311AE31FABA /* FiraGO-Italic.ttf in Resources */,
+				CA06CB3C20C047EC93FAB213 /* FiraGO-Light.ttf in Resources */,
+				8D88C06208514E61AB58BEA8 /* FiraGO-LightItalic.ttf in Resources */,
+				139F380285CA440FB0A6CC06 /* FiraGO-Medium.ttf in Resources */,
+				1920F5AA48AC40619FAD90A6 /* FiraGO-MediumItalic.ttf in Resources */,
+				90BE396DD7D940DAAD50683A /* FiraGO-Regular.ttf in Resources */,
+				ADF7D2316E2C4C12B7AE410D /* FiraGO-SemiBold.ttf in Resources */,
+				27D5A40426ED4D249C572CF2 /* FiraGO-SemiBoldItalic.ttf in Resources */,
+				742A1DC9891549C9A48A9FAA /* FiraGO-Thin.ttf in Resources */,
+				F1F3328DEE8844688EE982EE /* FiraGO-ThinItalic.ttf in Resources */,
+				D579585E15314D14B1BEF92B /* FiraGO-Two.ttf in Resources */,
+				D246AF5995184F118CA8EB6B /* FiraGO-TwoItalic.ttf in Resources */,
+				3C24D24C96BC4709953534B1 /* FiraGO-UltraLight.ttf in Resources */,
+				6DAB7168F2764D6E9E1055AB /* FiraGO-UltraLightItalic.ttf in Resources */,
+				DD99654E37554A1BB34788A1 /* HelveticaNeue-Bold.ttf in Resources */,
+				DF0DA0A3F62448BC9B49B8B4 /* HelveticaNeue-Medium.ttf in Resources */,
+				3C53384F8B584FA9BC439414 /* HelveticaNeue.ttf in Resources */,
+				A21614B8C43A4A72AE56C756 /* HelveticaNeueLTGEO55Mt-Regular.ttf in Resources */,
+				63E027D4B2244C6DB8728A6B /* HelveticaNeueLTGEO65Mt-Medium.ttf in Resources */,
+				E486B48BC6004400B0C9B20C /* HelveticaNeueLTGEO75Mt-Bold.ttf in Resources */,
+				F92C380B1F6D485DBC8B17DA /* NotoSans-Bold.ttf in Resources */,
+				5B96D41521F84516A1BF0E42 /* NotoSans-BoldItalic.ttf in Resources */,
+				DA912F9CC01249829AAED297 /* NotoSans-Italic.ttf in Resources */,
+				9875922382C146A497A43B44 /* NotoSans-Regular.ttf in Resources */,
+				F5FB925FA7824BBBBE8C5CFC /* NotoSansGeorgian-Black.ttf in Resources */,
+				FC1C5439D46F4B7FB18BA5A1 /* NotoSansGeorgian-Bold.ttf in Resources */,
+				BBE69AA0523A43508AB0D68C /* NotoSansGeorgian-Condensed.ttf in Resources */,
+				397354693F544FA788CE8A61 /* NotoSansGeorgian-CondensedBlack.ttf in Resources */,
+				FAA475E627264E2B822A9AD4 /* NotoSansGeorgian-CondensedBold.ttf in Resources */,
+				24CD8E79865A4DB6A2679B3C /* NotoSansGeorgian-CondensedExtraBold.ttf in Resources */,
+				E2BC9484C74641F4BB57995C /* NotoSansGeorgian-CondensedExtraLight.ttf in Resources */,
+				18733FA6091747609361B422 /* NotoSansGeorgian-CondensedLight.ttf in Resources */,
+				F98266EF1864429FA1E36DB0 /* NotoSansGeorgian-CondensedMedium.ttf in Resources */,
+				0B00387EE70A4222878AC45F /* NotoSansGeorgian-CondensedSemiBold.ttf in Resources */,
+				7F9FD83A2E9742549C475995 /* NotoSansGeorgian-CondensedThin.ttf in Resources */,
+				4407DD19FB164BABBF2BF3D7 /* NotoSansGeorgian-ExtraBold.ttf in Resources */,
+				880BCDA636D9453B8DF4B143 /* NotoSansGeorgian-ExtraCondensed.ttf in Resources */,
+				D67A75CCA5BF418B931EB2B7 /* NotoSansGeorgian-ExtraCondensedBlack.ttf in Resources */,
+				A7811431BADA4318873CBB5C /* NotoSansGeorgian-ExtraCondensedBold.ttf in Resources */,
+				5AE393A4CEC840B7992D2460 /* NotoSansGeorgian-ExtraCondensedExtraBold.ttf in Resources */,
+				E1C3D18FD4DC4942A7A58F14 /* NotoSansGeorgian-ExtraCondensedExtraLight.ttf in Resources */,
+				A790767CB28F4F02B921D99D /* NotoSansGeorgian-ExtraCondensedLight.ttf in Resources */,
+				D8D9FD5E008444928E0FE06D /* NotoSansGeorgian-ExtraCondensedMedium.ttf in Resources */,
+				6218E7F3D26F4076B683059C /* NotoSansGeorgian-ExtraCondensedSemiBold.ttf in Resources */,
+				3E052532E2CB46498C1A0C1C /* NotoSansGeorgian-ExtraCondensedThin.ttf in Resources */,
+				7EF5298187BB4C80A17D853E /* NotoSansGeorgian-ExtraLight.ttf in Resources */,
+				FFA37E8FEF1441D6AE00F69B /* NotoSansGeorgian-Light.ttf in Resources */,
+				3E9AF0A4A9F048C48CDEE2D3 /* NotoSansGeorgian-Medium.ttf in Resources */,
+				601512162A8947B0920780E1 /* NotoSansGeorgian-Regular.ttf in Resources */,
+				D93E830FD8D44F77B05C2760 /* NotoSansGeorgian-SemiBold.ttf in Resources */,
+				C5D694E2744C42DCBB49B803 /* NotoSansGeorgian-SemiCondensed.ttf in Resources */,
+				2090A6BD961A46108340ACB9 /* NotoSansGeorgian-SemiCondensedBlack.ttf in Resources */,
+				623F8E139E894FF480F9C24F /* NotoSansGeorgian-SemiCondensedBold.ttf in Resources */,
+				ADECAD05FD82400AAFE9FB71 /* NotoSansGeorgian-SemiCondensedExtraBold.ttf in Resources */,
+				EBD0510325984CF397068837 /* NotoSansGeorgian-SemiCondensedExtraLight.ttf in Resources */,
+				660DC33E01764AC390031DB5 /* NotoSansGeorgian-SemiCondensedLight.ttf in Resources */,
+				52004D3725A04F92B00910A3 /* NotoSansGeorgian-SemiCondensedMedium.ttf in Resources */,
+				4E00915C46764DE1A7AC1E5B /* NotoSansGeorgian-SemiCondensedSemiBold.ttf in Resources */,
+				CCD02903A256424790CE2789 /* NotoSansGeorgian-SemiCondensedThin.ttf in Resources */,
+				CF9D0F447C294731B6E5748E /* NotoSansGeorgian-Thin.ttf in Resources */,
+				2F8DEE88B73D4E609358A20E /* Poppins-Black.ttf in Resources */,
+				4F2915523F844AF3B53302E6 /* Poppins-BlackItalic.ttf in Resources */,
+				B00A30FBD7B84EC992D00BF1 /* Poppins-Bold.ttf in Resources */,
+				9EFC057A93904DE5A50BE647 /* Poppins-BoldItalic.ttf in Resources */,
+				B72E30EEF87643688A74970D /* Poppins-ExtraBold.ttf in Resources */,
+				CEE992BDB7C74738A4DDCCE5 /* Poppins-ExtraBoldItalic.ttf in Resources */,
+				85D09DB318F14C3298EDB948 /* Poppins-ExtraLight.ttf in Resources */,
+				E1455AC84368470F9FF87355 /* Poppins-ExtraLightItalic.ttf in Resources */,
+				F2AF0C8872B44B9CBAA9CFE3 /* Poppins-Italic.ttf in Resources */,
+				62CE68391F9241968108D1B3 /* Poppins-Light.ttf in Resources */,
+				86FA536760DF4DC4B76C3F62 /* Poppins-LightItalic.ttf in Resources */,
+				8118CFB5B2A7465D81EAD714 /* Poppins-Medium.ttf in Resources */,
+				CF57403261CA4C978D314915 /* Poppins-MediumItalic.ttf in Resources */,
+				F3C30A14725D41D7A4C42BC9 /* Poppins-Regular.ttf in Resources */,
+				2BEAA318682D433E9AB366F5 /* Poppins-SemiBold.ttf in Resources */,
+				D3B75FCC744347E5B9A82A22 /* Poppins-SemiBoldItalic.ttf in Resources */,
+				78C3EA69C2884D67BB43539A /* Poppins-Thin.ttf in Resources */,
+				8766CE0E90634AAAB1D8493A /* Poppins-ThinItalic.ttf in Resources */,
+				2A1136B7C262417899F9507A /* Roboto-Black.ttf in Resources */,
+				3E88F8317E7D47E284289EE3 /* Roboto-BlackItalic.ttf in Resources */,
+				C6E87E5C494B44A0B90E2DD6 /* Roboto-Bold.ttf in Resources */,
+				28B5E9F72E604068B3F442E3 /* Roboto-BoldItalic.ttf in Resources */,
+				027D13BACCEC4B54A25C72ED /* Roboto-Italic.ttf in Resources */,
+				DEFBA25052F64B529DAE98DC /* Roboto-Light.ttf in Resources */,
+				C324C773F89A47E8A573CA05 /* Roboto-LightItalic.ttf in Resources */,
+				9438E553DA6D40ECA72C0423 /* Roboto-Medium.ttf in Resources */,
+				6BB622263FAA419F801DCD4A /* Roboto-MediumItalic.ttf in Resources */,
+				89D4A224B72F4AD4A201DF73 /* Roboto-Regular.ttf in Resources */,
+				51260D630C9B4FDC8A7E8C0B /* Roboto-Thin.ttf in Resources */,
+				6EDF96516F474B9B895E85AF /* Roboto-ThinItalic.ttf in Resources */,
+				34D2332D6601401C9EB395B0 /* LICENSE.txt in Resources */,
+				821CE31E69B843CAA86C5B55 /* LICENSE_OFL.txt in Resources */,
+				13DD3CAB35EE49538BB8CAD0 /* OFL.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/.xcode.env.local",
+				"$(SRCROOT)/.xcode.env",
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
+		};
+		00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-creditinfo/Pods-creditinfo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-creditinfo/Pods-creditinfo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-creditinfo/Pods-creditinfo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-creditinfo-creditinfoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-creditinfo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-creditinfo-creditinfoTests/Pods-creditinfo-creditinfoTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-creditinfo-creditinfoTests/Pods-creditinfo-creditinfoTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-creditinfo-creditinfoTests/Pods-creditinfo-creditinfoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-creditinfo/Pods-creditinfo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-creditinfo/Pods-creditinfo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-creditinfo/Pods-creditinfo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-creditinfo-creditinfoTests/Pods-creditinfo-creditinfoTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-creditinfo-creditinfoTests/Pods-creditinfo-creditinfoTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-creditinfo-creditinfoTests/Pods-creditinfo-creditinfoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD10A7F022414F080027D42C /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00E356EA1AD99517003FC87E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E356F31AD99517003FC87E /* creditinfoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F871A680F5B00A75B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
+				13B07FC11A68108700A75B9A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13B07F861A680F5B00A75B9A /* creditinfo */;
+			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00E356F61AD99517003FC87E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-creditinfo-creditinfoTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = creditinfoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/creditinfo.app/creditinfo";
+			};
+			name = Debug;
+		};
+		00E356F71AD99517003FC87E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-creditinfo-creditinfoTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COPY_PHASE_STRIP = NO;
+				INFOPLIST_FILE = creditinfoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/creditinfo.app/creditinfo";
+			};
+			name = Release;
+		};
+		13B07F941A680F5B00A75B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-creditinfo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = creditinfo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = creditinfo;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		13B07F951A680F5B00A75B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-creditinfo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = creditinfo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = creditinfo;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		83CBBA201A601CBA00E9B192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/lib/swift\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-DFOLLY_NO_CONFIG",
+					"-DFOLLY_MOBILE=1",
+					"-DFOLLY_USE_LIBCPP=1",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		83CBBA211A601CBA00E9B192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/lib/swift\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-DFOLLY_NO_CONFIG",
+					"-DFOLLY_MOBILE=1",
+					"-DFOLLY_USE_LIBCPP=1",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "creditinfoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E356F61AD99517003FC87E /* Debug */,
+				00E356F71AD99517003FC87E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "creditinfo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B07F941A680F5B00A75B9A /* Debug */,
+				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "creditinfo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CBBA201A601CBA00E9B192 /* Debug */,
+				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
+}
