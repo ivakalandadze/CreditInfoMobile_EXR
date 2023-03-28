@@ -1,15 +1,25 @@
-import {SafeAreaView, StyleSheet, Text, View} from 'react-native';
-import React from 'react';
-import BLogo from './assets/svg/1.svg';
+import {StyleSheet} from 'react-native';
+import React, {useEffect} from 'react';
+import {Provider} from 'react-redux';
+import store from './store/store';
+import RootNavigation from './navigation/RootNavigation';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import {chooseLanguage} from './redux/reducers/language/language.actions';
 
 export default function App() {
+  useEffect(() => {
+    const hello = AsyncStorage.getItem('language').then(language => {
+      if (language) {
+        store.dispatch(chooseLanguage(language));
+      }
+    });
+    console.log(hello);
+  }, []);
+
   return (
-    <SafeAreaView>
-      <View>
-        <BLogo width={150} height={150} />
-        <Text>App</Text>
-      </View>
-    </SafeAreaView>
+    <Provider store={store}>
+      <RootNavigation />
+    </Provider>
   );
 }
 
