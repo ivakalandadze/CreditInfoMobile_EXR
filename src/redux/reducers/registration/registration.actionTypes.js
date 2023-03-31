@@ -1,0 +1,9 @@
+export const CHOOSE_CUSTOMER_TYPE = 'CHOOSE_CUSTOMER_TYPE';
+export const SET_USER_NAME = 'SET_USER_NAME';
+export const SET_FIRST_NAME = 'SET_FIRST_NAME';
+export const SET_LAST_NAME = 'SET_LAST_NAME';
+export const SET_PASSWORD = 'SET_PASSWORD';
+export const SET_ADDRESS = 'SET_ADDRESS';
+export const SET_BIRTH_DATE = 'SET_BIRTH_DATE';
+export const SET_EMAIL = 'SET_EMAIL';
+export const SET_COUNTRY_ID = 'SET_COUNTRY_ID';

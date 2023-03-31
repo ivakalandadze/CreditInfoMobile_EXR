@@ -1,3 +1,5 @@
 import auth from './auth/auth.reducer';
 import changeLanguage from './language/language.reducer';
-export {auth, changeLanguage};
+import setSteps from './steps/steps.reducer';
+import customerType from './registration/registration.reducer';
+export {auth, changeLanguage, setSteps, customerType};

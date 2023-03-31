@@ -5,6 +5,7 @@ import ForgotPasswordScreen1 from '../../screens/auth/forgot password/ForgotPass
 import LogInScreen from '../../screens/auth/LogInScreen';
 import RegistrarionScreen from '../../screens/auth/RegistrarionScreen';
 import ForgotPasswordNavigation from './forgot password/ForgotPasswordNavigation.js';
+import RegistrationNavigation from './registration/RegistrationNavigation';
 
 const AuthStack = createNativeStackNavigator();
 export default function AuthNavigation() {
@@ -15,7 +16,10 @@ export default function AuthNavigation() {
         name="ForgotPassword"
         component={ForgotPasswordNavigation}
       />
-      <AuthStack.Screen name="Registration" component={RegistrarionScreen} />
+      <AuthStack.Screen
+        name="Registration"
+        component={RegistrationNavigation}
+      />
     </AuthStack.Navigator>
   );
 }

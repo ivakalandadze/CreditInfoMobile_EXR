@@ -1,5 +1,5 @@
 export const Languages = {
-  GEO: {
+  KA: {
     // ავტორიზაცია
 
     user: 'მომხმარებელი',
@@ -30,7 +30,7 @@ export const Languages = {
     enterOTP: 'შეოყვანეთ დასტურის კოდი',
     sendOTPAgain: 'ხელახლა გამოგზავნა',
   },
-  USA: {
+  EN: {
     // Authorization
 
     user: 'User',

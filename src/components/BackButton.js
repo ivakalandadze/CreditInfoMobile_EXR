@@ -1,6 +1,6 @@
 import {Pressable, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
-import BackButtonIcon from '../assets/svg/chevron-back-outline.svg';
+import BackButtonIcon from '../assets/svg/Icon ionic-ios-arrow-back.svg';
 import {useNavigation} from '@react-navigation/native';
 
 export default function BackButton({destination}) {

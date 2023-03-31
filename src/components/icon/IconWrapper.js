@@ -11,8 +11,7 @@ export default function IconWrapper({children, style, onPress}) {
 
 const styles = StyleSheet.create({
   iconWrapper: {
-    width: 31,
-    height: 31,
+    padding: 9,
     borderRadius: 10,
     alignItems: 'center',
     justifyContent: 'center',

@@ -16,7 +16,6 @@ import CloseIcon from '../../assets/svg/Group 7602.svg';
 import InfoMessageIcon from '../../assets/svg/Mask Group 274.svg';
 import {Languages} from '../../language/Languages';
 import {selectLanguage} from '../../redux/reducers/language/language.selector';
-import {chooseLanguage} from '../../redux/reducers/language/language.actions';
 
 const AUTH_ICON_WIDTH = 175;
 const AUTH_ICON_HEIGHT = 202.72;

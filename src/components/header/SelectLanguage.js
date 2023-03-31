@@ -19,22 +19,22 @@ export default function SelectLanguage() {
     <View style={styles.selectLanguageContainer}>
       <Pressable
         style={() => {
-          const selected = language === 'GEO';
+          const selected = language === 'KA';
           return selected
             ? [styles.flagStyle, {borderWidth: 1, borderColor: '#ADD8E6'}]
             : styles.flagStyle;
         }}
-        onPress={() => handleSelect('GEO')}>
+        onPress={() => handleSelect('KA')}>
         <Georgia width={25} height={25} />
       </Pressable>
       <Pressable
         style={() => {
-          const selected = language === 'USA';
+          const selected = language === 'EN';
           return selected
             ? [styles.flagStyle, {borderWidth: 1, borderColor: '#ADD8E6'}]
             : styles.flagStyle;
         }}
-        onPress={() => handleSelect('USA')}>
+        onPress={() => handleSelect('EN')}>
         <USA width={25} height={25} />
       </Pressable>
     </View>

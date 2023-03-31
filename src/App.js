@@ -13,7 +13,6 @@ export default function App() {
         store.dispatch(chooseLanguage(language));
       }
     });
-    console.log(hello);
   }, []);
 
   return (
