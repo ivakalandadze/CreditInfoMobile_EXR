@@ -35,7 +35,6 @@ export default function PersonalInfoInputs({setReadyToSubmit}) {
   const handleLastNameInput = lastName => {
     dispatch(setLastName(lastName));
   };
-  console.log(firstName, lastName, customerType, userName);
 
   return (
     <View style={styles.inputsContainer}>

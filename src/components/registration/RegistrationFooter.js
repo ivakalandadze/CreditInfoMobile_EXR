@@ -13,7 +13,6 @@ export default function RegistrationFooter() {
   const {step} = useSelector(selectSteps);
   const handleGoBack = () => {
     dispatch(setStep(step - 1));
-    console.log(step);
     step === 0
       ? navigation.goBack()
       : navigation.navigate(`RegistrationScreen${step - 1}`);

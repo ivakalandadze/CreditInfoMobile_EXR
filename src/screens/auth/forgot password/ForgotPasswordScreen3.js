@@ -49,7 +49,6 @@ export default function ForgotPasswordScreen3({route}) {
       if (newPassword === newPasswordConfirm) {
         const response = await changePassword(user, newPassword);
         navigation.navigate('LogIn', {passwordReset: true});
-        console.log('new Password set:', response);
       } else {
         setPasswordsDontMatch(true);
       }

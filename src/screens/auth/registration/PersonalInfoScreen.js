@@ -24,7 +24,7 @@ export default function PersonalInfoScreen() {
   return (
     <View style={[styles.userTypeScreen]}>
       <Text style={styles.userTypeHeader}>რეგისტრაცია</Text>
-      <Text style={styles.userTypeText}>მომხმარებლის ტიპი</Text>
+      <Text style={styles.userTypeText}>პირადი ინფორმაცია</Text>
       <PersonalInfoInputs setReadyToSubmit={setReadyToSubmit} />
       <BaseButton
         isDisabled={!readyToSubmit}

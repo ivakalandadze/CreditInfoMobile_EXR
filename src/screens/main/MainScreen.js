@@ -16,7 +16,6 @@ export default function MainScreen() {
       const decoded = jwt_decode(accessToken);
       setUser(decoded.exp);
     } catch (error) {
-      console.log('token Update');
       dispatch(updateToken(refreshToken));
     }
   }, [accessToken]);

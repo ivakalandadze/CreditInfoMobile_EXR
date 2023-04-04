@@ -15,7 +15,6 @@ const initialState = {
 const customerType = (state = initialState, action) => {
   switch (action.type) {
     case types.CHOOSE_CUSTOMER_TYPE:
-      console.log('chooseTYPEeeeeeee');
       return {
         ...state,
         customerType: action.customerType,

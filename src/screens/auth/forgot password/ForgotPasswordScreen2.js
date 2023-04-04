@@ -78,7 +78,6 @@ export default function ForgotPasswordScreen2({route}) {
 
   const handleOTPCheck = async () => {
     const code = Object.values(OTPCode).join('');
-    console.log(code);
     try {
       const response = await checkOTP(user, code);
       setOTPSent(true);

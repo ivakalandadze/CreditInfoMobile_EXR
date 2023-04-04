@@ -37,7 +37,6 @@ export default function ContactInfoScreen() {
   };
 
   useEffect(() => {
-    console.log(birthDate, countryId, email, address);
     if (birthDate && countryId && email && address) {
       setReadyToSubmit(true);
     } else {
@@ -47,7 +46,7 @@ export default function ContactInfoScreen() {
   return (
     <View style={styles.contactInfoScreen}>
       <Text style={styles.userTypeHeader}>რეგისტრაცია</Text>
-      <Text style={styles.userTypeText}>მომხმარებლის ტიპი</Text>
+      <Text style={styles.userTypeText}>საკონტაქტო ინფორმაცია</Text>
       <View style={styles.inputsContainer}>
         <View style={styles.selectInput}>
           <RNPickerSelect
@@ -82,11 +81,13 @@ export default function ContactInfoScreen() {
           <SelectIcon style={styles.selectIcon} width={10} height={10} />
         </View>
         <TextInput
+          value={address}
           style={styles.inputBox}
           placeholder="შეიყვანეთ მისამართი"
           onChangeText={handleAddressInput}
         />
         <TextInput
+          value={email}
           style={styles.inputBox}
           placeholder="შეიყვანეთ ელ.ფოსტა"
           onChangeText={handleEmailInput}

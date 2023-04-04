@@ -9,7 +9,6 @@ import CompanyIcon from '../../assets/svg/29-auction.svg';
 export default function UserType({type}) {
   const dispatch = useDispatch();
   const handleTypeSelect = () => {
-    console.log(type);
     dispatch(setCustomerType(type));
   };
   const {customerType} = useSelector(selectType);
