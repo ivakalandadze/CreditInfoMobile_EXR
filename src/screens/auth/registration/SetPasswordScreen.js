@@ -10,13 +10,12 @@ import {useNavigation} from '@react-navigation/native';
 import {selectType} from '../../../redux/reducers/registration/registration.selector';
 import registerUser from '../../../utils/registerUser';
 import {authUserRequest} from '../../../utils/authUserRequest';
+import {updateToken} from '../../../redux/reducers/auth/auth.actions';
+import {selectAuth} from '../../../redux/reducers/auth/auth.selector';
 
 export default function SetPasswordScreen() {
   const dispatch = useDispatch();
   const navigation = useNavigation();
-  const [newPass, setNewPass] = useState('');
-  const [newPassConfirm, setNewPassConfirm] = useState('');
-  const [passwordValidation, setPasswordValidation] = useState('');
   const {
     firstName,
     lastName,
@@ -28,6 +27,11 @@ export default function SetPasswordScreen() {
     email,
     countryId,
   } = useSelector(selectType);
+  const [newPass, setNewPass] = useState(password || '');
+  const [newPassConfirm, setNewPassConfirm] = useState(password || '');
+  const [passwordValidation, setPasswordValidation] = useState('');
+  const {accessToken} = useSelector(selectAuth);
+
   const regex = new RegExp(
     '^(?=.*[A-Z]{1,})(?=.*[a-z]{1,})(?=.*[0-9]{1,})(?=.*[~!@#$%^&*()-_=+{};:,<.>]{1,}).{8,}$',
   );
@@ -59,17 +63,21 @@ export default function SetPasswordScreen() {
         const authResponse = await authUserRequest(password, userName);
         console.log(response);
         const access_token = authResponse.data.accessToken;
-        navigation.navigate('RegistrationScreen4', {access_token});
+        dispatch(updateToken(access_token));
+        navigation.navigate('RegistrationScreen4');
       } catch (error) {
         console.log(error);
       }
     };
-    if (password) {
+    if (password && !accessToken) {
       handleUserRegistration();
     }
   }, [password]);
 
   const handlePasswordConfirm = () => {
+    if (accessToken) {
+      navigation.navigate('RegistrationScreen4');
+    }
     dispatch(setPassword(newPass));
   };
   const infroBoxStyle =
@@ -100,6 +108,8 @@ export default function SetPasswordScreen() {
       <PasswordInputs
         setNewPassword={setNewPass}
         setNewPasswordConfirm={setNewPassConfirm}
+        newPassword={newPass}
+        newPasswordConfirm={newPassConfirm}
       />
       <BaseButton
         isDisabled={!passwordValidation}

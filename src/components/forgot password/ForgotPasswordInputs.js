@@ -6,14 +6,21 @@ import IconWrapper from '../icon/IconWrapper';
 import {useSelector} from 'react-redux';
 import {selectLanguage} from '../../redux/reducers/language/language.selector';
 import {Languages} from '../../language/Languages';
+import {selectType} from '../../redux/reducers/registration/registration.selector';
 
 const PASS_ICON_WIDTH = 16;
 const PASS_ICON_HEIGHT = 12.8;
 
-export default function SignInInputs({setNewPassword, setNewPasswordConfirm}) {
+export default function SignInInputs({
+  setNewPassword,
+  setNewPasswordConfirm,
+  newPassword,
+  newPasswordConfirm,
+}) {
   const [showPassword, setShowPassword] = useState(true);
   const [showPasswordConfirm, setShowPasswordConfirm] = useState(true);
   const {language} = useSelector(selectLanguage);
+  const {password} = useSelector(selectType);
 
   const {newPass, confirmPass} = Languages[language];
 
@@ -27,6 +34,7 @@ export default function SignInInputs({setNewPassword, setNewPasswordConfirm}) {
     <View style={styles.inputsBox}>
       <View style={styles.passwordInput}>
         <TextInput
+          value={newPassword}
           secureTextEntry={showPassword}
           style={styles.textInput}
           onChangeText={setNewPassword}
@@ -43,6 +51,7 @@ export default function SignInInputs({setNewPassword, setNewPasswordConfirm}) {
       </View>
       <View style={styles.passwordInput}>
         <TextInput
+          value={newPasswordConfirm}
           secureTextEntry={showPasswordConfirm}
           style={styles.textInput}
           onChangeText={setNewPasswordConfirm}
