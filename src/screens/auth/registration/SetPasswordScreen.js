@@ -46,7 +46,7 @@ export default function SetPasswordScreen() {
   }, [newPass, newPassConfirm]);
 
   useEffect(() => {
-    dispatch(setStep(4));
+    dispatch(setStep(3));
   }, []);
 
   useEffect(() => {
@@ -59,12 +59,13 @@ export default function SetPasswordScreen() {
           customerType,
           userName,
         });
-        console.log(response);
         const authResponse = await authUserRequest(password, userName);
-        console.log(response);
         const access_token = authResponse.data.accessToken;
-        dispatch(updateToken(access_token));
-        navigation.navigate('RegistrationScreen4');
+        const refresh_token = authResponse.data.refreshToken;
+        console.log(access_token, refresh_token);
+
+        dispatch(updateToken(access_token, refresh_token));
+        navigation.navigate('RegistrationScreen3');
       } catch (error) {
         console.log(error);
       }
@@ -76,7 +77,7 @@ export default function SetPasswordScreen() {
 
   const handlePasswordConfirm = () => {
     if (accessToken) {
-      navigation.navigate('RegistrationScreen4');
+      navigation.navigate('RegistrationScreen3');
     }
     dispatch(setPassword(newPass));
   };
@@ -106,6 +107,7 @@ export default function SetPasswordScreen() {
         </View>
       </View>
       <PasswordInputs
+        isDisabled={accessToken}
         setNewPassword={setNewPass}
         setNewPasswordConfirm={setNewPassConfirm}
         newPassword={newPass}

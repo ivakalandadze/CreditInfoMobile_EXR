@@ -4,7 +4,7 @@ const BASE_URL = 'http://myci-adm.test.ol.ge/mci-back';
 const REGISTER_USER = '/resources/front/register?language=KA';
 
 const registerUser = async userInfo => {
-  console.log(userInfo);
+  console.log('register user');
   return axios.post(BASE_URL + REGISTER_USER, userInfo);
 };
 

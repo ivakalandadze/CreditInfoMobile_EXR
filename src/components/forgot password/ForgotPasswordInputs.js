@@ -16,6 +16,7 @@ export default function SignInInputs({
   setNewPasswordConfirm,
   newPassword,
   newPasswordConfirm,
+  isDisabled,
 }) {
   const [showPassword, setShowPassword] = useState(true);
   const [showPasswordConfirm, setShowPasswordConfirm] = useState(true);
@@ -34,6 +35,7 @@ export default function SignInInputs({
     <View style={styles.inputsBox}>
       <View style={styles.passwordInput}>
         <TextInput
+          editable={!isDisabled}
           value={newPassword}
           secureTextEntry={showPassword}
           style={styles.textInput}
@@ -51,6 +53,7 @@ export default function SignInInputs({
       </View>
       <View style={styles.passwordInput}>
         <TextInput
+          editable={!isDisabled}
           value={newPasswordConfirm}
           secureTextEntry={showPasswordConfirm}
           style={styles.textInput}

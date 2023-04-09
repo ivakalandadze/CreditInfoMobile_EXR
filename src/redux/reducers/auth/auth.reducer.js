@@ -18,6 +18,7 @@ const auth = (state = initialState, action) => {
       return {
         ...state,
         accessToken: action.accessToken,
+        refreshToken: action.refreshToken,
       };
     case types.LOGOUT_USER:
       return {

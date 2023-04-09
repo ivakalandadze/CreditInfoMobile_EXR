@@ -11,7 +11,6 @@ import EmailIcon from '../../assets/svg/Clip path group (2).svg';
 export default function ConfirmationType({type, choosenType, setType}) {
   const dispatch = useDispatch();
   const handleTypeSelect = () => {
-    console.log(type);
     setType(type);
   };
   const {customerType} = useSelector(selectType);
@@ -29,15 +28,15 @@ export default function ConfirmationType({type, choosenType, setType}) {
             ? [styles.iconWrapper, styles.choosenIconWrapper]
             : styles.iconWrapper
         }>
-        {type === 'PHONE' ? (
+        {type === 'phone' ? (
           <PhoneIcon width={19} height={19} fill={iconColor} />
-        ) : type === 'EMAIL' ? (
+        ) : type === 'email' ? (
           <EmailIcon width={19} height={19} fill={iconColor} />
         ) : (
           <></>
         )}
       </View>
-      {type === 'PHONE' ? (
+      {type === 'phone' ? (
         <Text
           style={
             isChoosen
@@ -46,7 +45,7 @@ export default function ConfirmationType({type, choosenType, setType}) {
           }>
           ფიზიკური პირი
         </Text>
-      ) : type === 'EMAIL' ? (
+      ) : type === 'email' ? (
         <Text
           style={
             isChoosen

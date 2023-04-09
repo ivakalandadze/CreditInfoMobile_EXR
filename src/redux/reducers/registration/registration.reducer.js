@@ -7,7 +7,7 @@ const initialState = {
   password: '',
   userName: '',
   address: '',
-  birthDate: '',
+  birthDate: new Date(),
   email: '',
   countryId: 0,
 };

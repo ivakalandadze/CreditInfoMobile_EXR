@@ -1,7 +1,6 @@
 import {StyleSheet, Text, View, Button} from 'react-native';
 import React, {useEffect, useState} from 'react';
 import {useDispatch, useSelector} from 'react-redux';
-import {selectType} from '../../../redux/reducers/registration/registration.selector';
 import getAgreement from '../../../utils/getAgreement';
 import RenderHtml from 'react-native-render-html';
 import {ScrollView} from 'react-native-gesture-handler';
@@ -12,13 +11,15 @@ import BaseButton from '../../../components/BaseButton';
 import {useNavigation} from '@react-navigation/native';
 import {setStep} from '../../../redux/reducers/steps/steps.actions';
 import {selectAuth} from '../../../redux/reducers/auth/auth.selector';
+import refreshTokenRequest from '../../../utils/refreshTokenRequest';
+import {updateToken} from '../../../redux/reducers/auth/auth.actions';
 
 export default function UserAgreementScreen({route}) {
   const [userAgreement, setUserAgreement] = useState('');
   const [modalVisible, setModalVisible] = useState(false);
   const [userAgreementChecked, setUserAgreementChecked] = useState(false);
   const [comerceAgreementChecked, setComerceAgreementChecked] = useState(false);
-  const {accessToken} = useSelector(selectAuth);
+  const {accessToken, refreshToken} = useSelector(selectAuth);
   const navigation = useNavigation();
   const dispatch = useDispatch();
 
@@ -26,14 +27,10 @@ export default function UserAgreementScreen({route}) {
     const getUserAgreement = async () => {
       try {
         const agreement = await getAgreement(accessToken);
-        console.log(agreement.data);
         let htmlString = agreement.data.content;
         let plainText = htmlString.replace(/['"]+/g, '');
-        console.log(plainText);
         setUserAgreement({html: plainText});
-      } catch (error) {
-        console.log('arali agreement');
-      }
+      } catch (error) {}
     };
     getUserAgreement();
   }, []);
@@ -41,7 +38,10 @@ export default function UserAgreementScreen({route}) {
     dispatch(setStep(4));
   }, []);
 
-  const handleUserAgreementConfirm = () => {
+  const handleUserAgreementConfirm = async () => {
+    const resp = await refreshTokenRequest(refreshToken);
+    console.log(resp.data);
+    dispatch(updateToken(accessToken, refreshToken));
     navigation.navigate('RegistrationScreen5');
   };
   return (

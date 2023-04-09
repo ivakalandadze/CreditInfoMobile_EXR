@@ -14,6 +14,7 @@ export default function PersonalInfoInputs({setReadyToSubmit}) {
   const [usernameConfirm, setUsernameConfirm] = useState(userName);
   const [userNameCheck, setuserNameCheck] = useState(userName);
   const [userNamesMatch, setUserNamesMatch] = useState(false);
+
   useEffect(() => {
     if (userNameCheck === usernameConfirm) {
       dispatch(setUserName(userNameCheck));
@@ -43,6 +44,8 @@ export default function PersonalInfoInputs({setReadyToSubmit}) {
         style={styles.inputStyle}
         placeholder="პირადი ნომერი"
         onChangeText={setuserNameCheck}
+        maxLength={11}
+        keyboardType={'number-pad'}
       />
       <View style={styles.confirmWrapper}>
         <TextInput
@@ -54,6 +57,8 @@ export default function PersonalInfoInputs({setReadyToSubmit}) {
           }
           placeholder="გაიმეორეთ პირადი ნომერი"
           onChangeText={setUsernameConfirm}
+          maxLength={11}
+          keyboardType={'number-pad'}
         />
         {!userNamesMatch && (
           <Text style={styles.requiredText}>აუცილებელი ველი</Text>

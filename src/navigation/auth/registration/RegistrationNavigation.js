@@ -33,11 +33,11 @@ const RegistrationNavigation = () => {
         />
         <RegistrationStack.Screen
           name="RegistrationScreen2"
-          component={ContactInfoScreen}
+          component={SetPasswordScreen}
         />
         <RegistrationStack.Screen
           name="RegistrationScreen3"
-          component={SetPasswordScreen}
+          component={ContactInfoScreen}
         />
         <RegistrationStack.Screen
           name="RegistrationScreen4"

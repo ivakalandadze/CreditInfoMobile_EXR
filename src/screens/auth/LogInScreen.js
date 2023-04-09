@@ -70,7 +70,6 @@ export default function LogInScreen({navigation, route}) {
   const handleSignIn = async () => {
     try {
       const response = await authUserRequest(password, userName);
-      console.log(response);
       dispatch(authUser(response.data.accessToken, response.data.refreshToken));
       await AsyncStorage.setItem('accessToken', response.data.accessToken);
       await AsyncStorage.setItem('refreshToken', response.data.refreshToken);

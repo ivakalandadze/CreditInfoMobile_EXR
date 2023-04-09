@@ -3,7 +3,7 @@ import React, {useEffect, useState} from 'react';
 import {useDispatch, useSelector} from 'react-redux';
 import {selectAuth} from '../../redux/reducers/auth/auth.selector';
 import jwt_decode from 'jwt-decode';
-import {logOutUser, updateToken} from '../../redux/reducers/auth/auth.actions';
+import {logOutUser, refreshToken} from '../../redux/reducers/auth/auth.actions';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import BaseButton from '../../components/BaseButton';
 
@@ -16,7 +16,7 @@ export default function MainScreen() {
       const decoded = jwt_decode(accessToken);
       setUser(decoded.exp);
     } catch (error) {
-      dispatch(updateToken(refreshToken));
+      dispatch(refreshToken(refreshToken));
     }
   }, [accessToken]);
 
