@@ -24,12 +24,14 @@ import DateTimePicker from '@react-native-community/datetimepicker';
 import getCountries from '../../../utils/getCountries';
 import contactInfoAuth from '../../../utils/contactInfoAuth';
 import {selectAuth} from '../../../redux/reducers/auth/auth.selector';
+import refreshTokenRequest from '../../../utils/refreshTokenRequest';
+import {updateToken} from '../../../redux/reducers/auth/auth.actions';
 
 export default function ContactInfoScreen() {
   const dispatch = useDispatch();
   const navigation = useNavigation();
   const {birthDate, countryId, email, address} = useSelector(selectType);
-  const {accessToken} = useSelector(selectAuth);
+  const {accessToken, refreshToken} = useSelector(selectAuth);
   const [readyToSubmit, setReadyToSubmit] = useState(false);
   const [dateOpen, setDateOpen] = useState(false);
   const [countries, setCountries] = useState([]);
@@ -38,13 +40,14 @@ export default function ContactInfoScreen() {
   useEffect(() => {
     const fetchCountries = async () => {
       try {
-        const resp = await getCountries();
+        const resp = await getCountries(accessToken);
+        setCountries(resp.data);
       } catch (error) {}
     };
     fetchCountries();
   }, []);
   useEffect(() => {
-    dispatch(setStep(2));
+    dispatch(setStep(3));
   }, []);
   const handleBirthDateInput = date => {
     const day = date.getDate() < 10 ? `0${date.getDate()}` : date.getDate();
@@ -87,7 +90,26 @@ export default function ContactInfoScreen() {
       );
       navigation.navigate('RegistrationScreen4');
     } catch (error) {
-      console.log(error);
+      if (error.response.status === 401) {
+        const refreshResp = await refreshTokenRequest(
+          accessToken,
+          refreshToken,
+        );
+        dispatch(
+          updateToken(
+            refreshResp.data.accessToken,
+            refreshResp.data.refreshToken,
+          ),
+        );
+        const resp = await contactInfoAuth(
+          address,
+          countryId,
+          email,
+          birthDate,
+          accessToken,
+        );
+        navigation.navigate('RegistrationScreen4');
+      } else console.log(error);
     }
   };
   return (
@@ -112,10 +134,13 @@ export default function ContactInfoScreen() {
             style={pickerSelectStyles}
             onValueChange={countryId => handleCountryIdInput(countryId)}
             placeholder={{
-              label: 'აირჩიეთ ქვეყანა',
-              value: null,
+              label: 'საქართველო',
+              value: 1,
             }}
-            items={[{label: 'Georgia', value: 1}]}
+            items={countries.map(country => ({
+              label: country.name,
+              value: country.id,
+            }))}
           />
           <SelectIcon style={styles.selectIcon} width={10} height={10} />
         </View>

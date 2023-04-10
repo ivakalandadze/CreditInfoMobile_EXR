@@ -9,8 +9,12 @@ import LoadingBar2 from '../../../components/registration/LoadingBar2';
 import OTPDigitBox from '../../../components/forgot password/OTPDigitBox';
 import BaseButton from '../../../components/BaseButton';
 import sendConfirmationOTP from '../../../utils/sendConfirmationOTP';
-import getOTPDuration from '../../../utils/getOTPDuration';
 import {selectAuth} from '../../../redux/reducers/auth/auth.selector';
+import registrationOTPCheck from '../../../utils/registrationOTPCheck';
+import {useNavigation} from '@react-navigation/native';
+import {setCustomerType} from '../../../redux/reducers/registration/registration.actions';
+import refreshTokenRequest from '../../../utils/refreshTokenRequest';
+import {updateToken} from '../../../redux/reducers/auth/auth.actions';
 
 export default function RegistrationConfirmationScreen() {
   const dispatch = useDispatch();
@@ -19,21 +23,22 @@ export default function RegistrationConfirmationScreen() {
   const [startCountDown, setStartCountDown] = useState(false);
   const [OTPTimedOut, setOTPTimedOut] = useState(false);
   const [confirmationAddress, setConfirmationAddress] = useState('');
-  const {accessToken} = useSelector(selectAuth);
+  const [OTPCode, setOTPCode] = useState({});
+  const {accessToken, refreshToken} = useSelector(selectAuth);
+  const navigation = useNavigation();
 
   useEffect(() => {
     dispatch(setStep(5));
   }, []);
 
-  useEffect(() => {
-    const setDuration = async () => {
-      const duration = await getOTPDuration();
-      setOTPDuration(duration.data.seconds);
-    };
-    setDuration();
-  }, []);
+  const handleOTPInput = (index, digit) => {
+    setOTPCode(prevCode => ({
+      ...prevCode,
+      [index]: digit,
+    }));
+  };
 
-  const handleOTPResend = () => {};
+  useEffect(() => {}, [accessToken, refreshToken]);
 
   const handleSendOTP = async () => {
     try {
@@ -42,9 +47,57 @@ export default function RegistrationConfirmationScreen() {
         confirmationType,
         accessToken,
       );
+      setOTPDuration(60);
       setStartCountDown(true);
     } catch (error) {
-      console.log(error);
+      if (error.response.status === 401) {
+        try {
+          const refreshResp = await refreshTokenRequest(
+            accessToken,
+            refreshToken,
+          );
+          dispatch(
+            updateToken(
+              refreshResp.data.accessToken,
+              refreshResp.data.refreshToken,
+            ),
+          );
+
+          const resp = await sendConfirmationOTP(
+            confirmationAddress,
+            confirmationType,
+            accessToken,
+          );
+          setOTPDuration(60);
+          setStartCountDown(true);
+        } catch (error1) {
+          console.log(error1);
+        }
+      } else console.log(error);
+    }
+  };
+
+  const handleOTPCheck = async () => {
+    const code = Object.values(OTPCode).join('');
+    try {
+      const resp = await registrationOTPCheck(code, accessToken);
+      setStartCountDown(false);
+      dispatch(setCustomerType(''));
+      navigation.navigate('LogIn', {registrationDone: true});
+    } catch (error) {
+      if (error.response.status === 401) {
+        const refreshResp = await refreshTokenRequest(refreshToken);
+        dispatch(
+          updateToken(
+            refreshResp.data.accessToken,
+            refreshResp.data.refreshToken,
+          ),
+        );
+        const resp = await registrationOTPCheck(code, accessToken);
+        setStartCountDown(false);
+        dispatch(setCustomerType(''));
+        navigation.navigate('LogIn', {registrationDone: true});
+      } else console.log(error);
     }
   };
 
@@ -76,16 +129,15 @@ export default function RegistrationConfirmationScreen() {
             address={confirmationAddress}
             setAddress={setConfirmationAddress}
           />
-          <BaseButton onPress={handleSendOTP}>გაგზავნა</BaseButton>
           <LoadingBar2
             setOTPTimedOut={setOTPTimedOut}
-            OTPduration={OTPDuration}
+            OTPDuration={OTPDuration}
             startCountDown={startCountDown}
             setStartCountDown={setStartCountDown}
           />
           <BaseButton
-            isDisabled={!OTPTimedOut}
-            onPress={handleOTPResend}
+            isDisabled={!OTPTimedOut && OTPDuration}
+            onPress={handleSendOTP}
             buttonStyle={{
               width: 274,
               height: 42,
@@ -99,12 +151,17 @@ export default function RegistrationConfirmationScreen() {
               lineHeight: 15,
               color: 'rgba(10, 26, 38, 1)',
             }}>
-            ხელახლა გაგზვანა
+            {!OTPDuration ? (
+              <Text>'გაგზავნა'</Text>
+            ) : (
+              <Text>'ხელახლა გაგზავნა'</Text>
+            )}
           </BaseButton>
         </View>
       )}
       {confirmationType === 'EMAIL' && <EmailInput />}
-      <OTPDigitBox />
+      <OTPDigitBox onChangeText={handleOTPInput} />
+      <BaseButton onPress={handleOTPCheck}>ავტორიზაცია</BaseButton>
     </View>
   );
 }

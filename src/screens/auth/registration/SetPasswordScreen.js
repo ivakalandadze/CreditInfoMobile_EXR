@@ -46,7 +46,7 @@ export default function SetPasswordScreen() {
   }, [newPass, newPassConfirm]);
 
   useEffect(() => {
-    dispatch(setStep(3));
+    dispatch(setStep(2));
   }, []);
 
   useEffect(() => {
@@ -62,8 +62,6 @@ export default function SetPasswordScreen() {
         const authResponse = await authUserRequest(password, userName);
         const access_token = authResponse.data.accessToken;
         const refresh_token = authResponse.data.refreshToken;
-        console.log(access_token, refresh_token);
-
         dispatch(updateToken(access_token, refresh_token));
         navigation.navigate('RegistrationScreen3');
       } catch (error) {

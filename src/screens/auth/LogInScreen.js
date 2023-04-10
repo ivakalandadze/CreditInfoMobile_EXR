@@ -28,10 +28,11 @@ export default function LogInScreen({navigation, route}) {
   const dispatch = useDispatch();
 
   const {language} = useSelector(selectLanguage);
-  const [passwordReset, setPasswordReset] = useState(false);
+  const [successMessage, setSuccessMessage] = useState('');
   const [userName, setUserName] = useState('');
   const [password, setPassword] = useState('');
   const [wrongCredentials, setWrongCredentials] = useState(false);
+  const [successModalShow, setSucessModalShow] = useState(false);
   const [words, setWords] = useState({});
 
   const insets = useSafeAreaInsets();
@@ -50,7 +51,8 @@ export default function LogInScreen({navigation, route}) {
 
   useEffect(() => {
     if (route.params) {
-      setPasswordReset(route.params.passwordReset);
+      setSucessModalShow(true);
+      setSuccessMessage(Object.keys(route.params)[0]);
     }
   }, [route.params]);
 
@@ -75,7 +77,6 @@ export default function LogInScreen({navigation, route}) {
       await AsyncStorage.setItem('refreshToken', response.data.refreshToken);
     } catch (error) {
       if (error.response.status === 401) {
-        console.log(error.response);
         setWrongCredentials(true);
       } else {
         console.log(error);
@@ -104,22 +105,32 @@ export default function LogInScreen({navigation, route}) {
           <Link onPress={handleForgotPassword}>{didYouForgetPassword}</Link>
           <BaseButton onPress={handleSignIn}>{authorization}</BaseButton>
         </View>
-        <Modal visible={passwordReset} transparent={true} animationType="slide">
+        <Modal
+          visible={successModalShow}
+          transparent={true}
+          animationType="slide">
           <View style={[styles.modalContainer1, {marginTop: statusBarHeight}]}>
             <Pressable
               style={styles.modalCloseButton}
-              onPress={() => setPasswordReset(false)}>
+              onPress={() => setSucessModalShow(false)}>
               <CloseIcon width={CLOSE_ICON_WIDTH} height={CLOSE_ICON_HEIGHT} />
             </Pressable>
             <InfoMessageIcon
               width={INFO_MESSAGE_ICON_WIDTH}
               height={INFO_MESSAGE_ICON_HEIGHT}
+              fill="white"
             />
             <View style={styles.warningTextBox}>
               <Text style={styles.warningHeader}>{message}</Text>
-              <Text style={styles.warningText}>
-                პაროლი წარმატებით განახლდა{' '}
-              </Text>
+              {successMessage === 'passwordReset' ? (
+                <Text style={styles.warningText}>
+                  პაროლი წარმატებით განახლდა
+                </Text>
+              ) : (
+                <Text style={styles.warningText}>
+                  რეგისტრაცია წარმატებით დასრულდა
+                </Text>
+              )}
             </View>
           </View>
         </Modal>
@@ -136,6 +147,7 @@ export default function LogInScreen({navigation, route}) {
             <InfoMessageIcon
               width={INFO_MESSAGE_ICON_WIDTH}
               height={INFO_MESSAGE_ICON_HEIGHT}
+              fill="white"
             />
             <View style={styles.warningTextBox}>
               <Text style={styles.warningHeader}>{mistake}</Text>

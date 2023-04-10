@@ -4,15 +4,14 @@ import React, {useState, useEffect} from 'react';
 export default function LoadingBar2({
   startCountDown,
   setStartCountDown,
-  // OTPDuration,
   setOTPTimedOut,
 }) {
   const [time, setTime] = useState(0);
   const [boxWidth, setBoxWidth] = useState(0);
-  const OTPDuration = 5;
+  const OTPDuration = 60;
   useEffect(() => {
     if (startCountDown) {
-      setBoxWidth((273 / 5) * time);
+      setBoxWidth((273 / OTPDuration) * time);
       const interval = setInterval(() => {
         if (time === OTPDuration) {
           setOTPTimedOut(true);

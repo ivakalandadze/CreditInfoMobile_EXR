@@ -10,7 +10,6 @@ const contactInfoAuth = async (
   birthDate,
   accessToken,
 ) => {
-  console.log('contact info Auth');
   return axios.put(
     BASE_URL + EXTRA_USER,
     {

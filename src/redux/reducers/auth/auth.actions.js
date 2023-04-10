@@ -19,7 +19,6 @@ export const logOutUser = () => {
   };
 };
 export const updateToken = (accessToken, refreshToken) => {
-  console.log(accessToken, refreshToken);
   return async dispatch => {
     try {
       dispatch({type: types.UPDATE_TOKEN, accessToken, refreshToken});

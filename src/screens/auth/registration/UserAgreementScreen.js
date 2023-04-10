@@ -11,8 +11,8 @@ import BaseButton from '../../../components/BaseButton';
 import {useNavigation} from '@react-navigation/native';
 import {setStep} from '../../../redux/reducers/steps/steps.actions';
 import {selectAuth} from '../../../redux/reducers/auth/auth.selector';
+import agreeOnAgreement from '../../../utils/agreeOnAgreement';
 import refreshTokenRequest from '../../../utils/refreshTokenRequest';
-import {updateToken} from '../../../redux/reducers/auth/auth.actions';
 
 export default function UserAgreementScreen({route}) {
   const [userAgreement, setUserAgreement] = useState('');
@@ -30,7 +30,21 @@ export default function UserAgreementScreen({route}) {
         let htmlString = agreement.data.content;
         let plainText = htmlString.replace(/['"]+/g, '');
         setUserAgreement({html: plainText});
-      } catch (error) {}
+      } catch (error) {
+        if (error.response.status === 401) {
+          const refreshResp = await refreshTokenRequest(
+            accessToken,
+            refreshToken,
+          );
+          dispatch(
+            updateToken(
+              refreshResp.data.accessToken,
+              refreshResp.data.refreshToken,
+            ),
+          );
+          getUserAgreement();
+        } else console.log(error);
+      }
     };
     getUserAgreement();
   }, []);
@@ -39,10 +53,19 @@ export default function UserAgreementScreen({route}) {
   }, []);
 
   const handleUserAgreementConfirm = async () => {
-    const resp = await refreshTokenRequest(refreshToken);
-    console.log(resp.data);
-    dispatch(updateToken(accessToken, refreshToken));
-    navigation.navigate('RegistrationScreen5');
+    try {
+      const agreeResp = await agreeOnAgreement(accessToken);
+      navigation.navigate('RegistrationScreen5');
+    } catch (error) {
+      if (error.response.status) {
+        const refreshResp = await refreshTokenRequest(refreshToken);
+        dispatch(
+          updateToken(refreshResp.accessToken, refreshResp.refreshToken),
+        );
+        const agreeResp = await agreeOnAgreement(accessToken);
+        navigation.navigate('RegistrationScreen5');
+      } else console.log(error);
+    }
   };
   return (
     <View style={styles.userAgreementScreen}>
@@ -51,46 +74,6 @@ export default function UserAgreementScreen({route}) {
       <View style={styles.policyBox}>
         <ScrollView style={styles.scrollBox}>
           <RenderHtml contentWidth={100} source={userAgreement} />
-          {/* <Text>
-            asdhadadkadahsfajfkjasfjkajkfakjfjkskfaksfkakfjjkafkjasdhadadkadahsfajfkjasfjkajkfakjfjkskfaksfkakfjjkafkj
-            asdhadadkadahsfajfkjasfjkajkfakjfjkskfaksfkakfjjkafkj
-            asdhadadkadahsfajfkjasfjkajkfakjfjkskfaksfkakfjjkafkj
-            asdhadadkadahsfajfkjasfjkajkfakjfjkskfaksfkakfjjkafkj
-            asdhadadkadahsfajfkjasfjkajkfakjfjkskfaksfkakfjjkafkj
-            asdhadadkadahsfajfkjasfjkajkfakjfjkskfaksfkakfjjkafkj
-            asdhadadkadahsfajfkjasfjkajkfakjfjkskfaksfkakfjjkafkj
-            asdhadadkadahsfajfkjasfjkajkfakjfjkskfaksfkakfjjkafkj
-            asdhadadkadahsfajfkjasfjkajkfakjfjkskfaksfkakfjjkafkj
-            asdhadadkadahsfajfkjasfjkajkfakjfjkskfaksfkakfjjkafkj
-            asdhadadkadahsfajfkjasfjkajkfakjfjkskfaksfkakfjjkafkj
-            asdhadadkadahsfajfkjasfjkajkfakjfjkskfaksfkakfjjkafkj
-            asdhadadkadahsfajfkjasfjkajkfakjfjkskfaksfkakfjjkafkj
-            asdhadadkadahsfajfkjasfjkajkfakjfjkskfaksfkakfjjkafkj
-            asdhadadkadahsfajfkjasfjkajkfakjfjkskfaksfkakfjjkafkj
-            asdhadadkadahsfajfkjasfjkajkfakjfjkskfaksfkakfjjkafkj
-            asdhadadkadahsfajfkjasfjkajkfakjfjkskfaksfkakfjjkafkj
-            asdhadadkadahsfajfkjasfjkajkfakjfjkskfaksfkakfjjkafkj
-            asdhadadkadahsfajfkjasfjkajkfakjfjkskfaksfkakfjjkafkj
-            asdhadadkadahsfajfkjasfjkajkfakjfjkskfaksfkakfjjkafkj
-            asdhadadkadahsfajfkjasfjkajkfakjfjkskfaksfkakfjjkafkj
-            asdhadadkadahsfajfkjasfjkajkfakjfjkskfaksfkakfjjkafkj
-            asdhadadkadahsfajfkjasfjkajkfakjfjkskfaksfkakfjjkafkj
-            asdhadadkadahsfajfkjasfjkajkfakjfjkskfaksfkakfjjkafkj
-            asdhadadkadahsfajfkjasfjkajkfakjfjkskfaksfkakfjjkafkj
-            asdhadadkadahsfajfkjasfjkajkfakjfjkskfaksfkakfjjkafkj
-            asdhadadkadahsfajfkjasfjkajkfakjfjkskfaksfkakfjjkafkj
-            asdhadadkadahsfajfkjasfjkajkfakjfjkskfaksfkakfjjkafkj
-            asdhadadkadahsfajfkjasfjkajkfakjfjkskfaksfkakfjjkafkj
-            asdhadadkadahsfajfkjasfjkajkfakjfjkskfaksfkakfjjkafkj
-            asdhadadkadahsfajfkjasfjkajkfakjfjkskfaksfkakfjjkafkj
-            asdhadadkadahsfajfkjasfjkajkfakjfjkskfaksfkakfjjkafkj
-            asdhadadkadahsfajfkjasfjkajkfakjfjkskfaksfkakfjjkafkj
-            asdhadadkadahsfajfkjasfjkajkfakjfjkskfaksfkakfjjkafkj
-            asdhadadkadahsfajfkjasfjkajkfakjfjkskfaksfkakfjjkafkj
-            asdhadadkadahsfajfkjasfjkajkfakjfjkskfaksfkakfjjkafkj
-            asdhadadkadahsfajfkjasfjkajkfakjfjkskfaksfkakfjjkafkj
-            asdhadadkadahsfajfkjasfjkajkfakjfjkskfaksfkakfjjkafkj
-          </Text> */}
         </ScrollView>
       </View>
       <View style={styles.agreement}>
